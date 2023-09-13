@@ -1,18 +1,18 @@
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2023-DA262)](https://api.reuse.software/info/github.com/SAP-samples/teched2023-DA262)
 
-# Session ID - Session Title
+# Session DA262 - SAP HANA Cloud from an adminstrators perspective
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2022 session called Session ID - Session Title.  
+This repository contains the material for the SAP TechEd 2023 session called DA262 - SAP HANA Cloud from an adminstrators perspective.  
 
 ## Overview
 
-This session introduces attendees to...
+This session introduces attendees to the end-to-end picture of operations required for running the SAP HANA Cloud database, using the Web-based tools SAP HANA Cloud Central and SAP HANA database explorer. 
 
 ## Requirements
 
-The requirements to follow the exercises in this repository are...
+To complete this workshop, you need access to an SAP BTP account. You can access SAP HANA Cloud from within SAP BTP and you can use a trial, free tier,  or productive version of SAP HANA Cloud.  **This workshop assumes that you already have a SAP BTP account and a SAP HANA Cloud database.**  If not, you can register for free at https://www.sap.com/cmp/td/sap-hana-cloud-trial.html.  The exercises make use of a **trial account**, but a [free tier](https://developers.sap.com/tutorials/btp-free-tier-account.html) account can also be used.  A benefit of using free tier is that the account can be upgraded to a paid service plan without having to re-create the account.
 
 ## Exercises
 
