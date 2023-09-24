@@ -74,6 +74,13 @@ After registering for a trial account using the link above, open your SAP BTP Co
 
     ![creating or running](images/creating.png)
 
+Feel free to move to the next exercise on the SAP BTP while waiting for the SAP HANA Cloud, SAP HANA database instance to switch to a running status.
+
+## SAP Business Technology Platform (SAP BTP) - 5 minutes
+The SAP BTP brings together data and analytics, artificial intelligence, application development, automation, and integration in one, unified environment.
+
+- [Exercise 1 - Overview of the SAP Business Technology Platform](exercises/sap_btp/ex1/)
+
 ## Exercises
 
 Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
