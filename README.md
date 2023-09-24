@@ -12,7 +12,7 @@ This session introduces attendees to the end-to-end picture of operations requir
 
 ## Requirements
 
-To complete this workshop, you need access to an SAP Business Technology Platform (SAP BTP) account. You can access SAP HANA Cloud from within SAP BTP and you can use a trial, free tier,  or productive version of SAP HANA Cloud.  **This workshop assumes that you already have a SAP BTP account and an SAP HANA Cloud database.**  If not, you can register for free at https://www.sap.com/cmp/td/sap-hana-cloud-trial.html.  The exercises make use of a **trial account**, but a [free tier](https://developers.sap.com/tutorials/btp-free-tier-account.html) account can also be used.  A benefit of using free tier is that the account can be upgraded to a paid service plan without having to re-create the account but may take longer to signup.
+To complete this workshop, you need access to an SAP Business Technology Platform (SAP BTP) account. You can access SAP HANA Cloud from within SAP BTP and you can use a trial, free tier,  or productive version of SAP HANA Cloud.  **This workshop assumes that you already have a SAP BTP account and an SAP HANA Cloud database.**  If you do not already have an SAP BTP account to use, you can register for free at https://www.sap.com/cmp/td/sap-hana-cloud-trial.html.  The exercises make use of a **trial account**, but a [free tier](https://developers.sap.com/tutorials/btp-free-tier-account.html) account can also be used.  A benefit of using free tier is that the account can be upgraded to a paid service plan without having to re-create the account but may take longer to signup.
 
 After registering for a trial account using the link above, open your SAP BTP Cockpit and get started by creating a SAP HANA Cloud instances.
 
@@ -80,6 +80,23 @@ Feel free to move to the next exercise on the SAP BTP while waiting for the SAP 
 The SAP BTP brings together data and analytics, artificial intelligence, application development, automation, and integration in one, unified environment.
 
 - [Exercise 1 - Overview of the SAP Business Technology Platform](exercises/sap_btp/ex1/)
+
+## SAP HANA Cloud Central - 60 minutes
+
+SAP HANA Cloud Central provides database administrators (DBAs) with a unified tool to administer and monitor SAP HANA Cloud databases and SAP HANA Cloud data lake instances.
+
+- [Exercise 1 - Overview of SAP HANA Cloud Central](exercises/hana_cloud_central/ex1/)
+- [Exercise 2 - Create Instances](exercises/hana_cloud_central/ex2/)
+- [Exercise 3 - Edit Instances](exercises/hana_cloud_central/ex3/)
+- [Exercise 4 - Start, Stop, Upgrade Instances, and Other Actions](exercises/hana_cloud_central/ex4/)
+- [Exercise X - SQL Console](exercises/hana_cloud_central/SQLConsole)
+
+## SAP HANA Database Explorer - 20 minutes
+The SAP HANA database explorer is a web-based tool for browsing and working with  database schema objects such as tables, views, and stored procedures and executing SQL.
+
+- [Exercise 1 - SAP HANA Database Explorer Connections](exercises/database_explorer/ex1/)
+- [Exercise 2 - Catalog Browser and Object Search](exercises/database_explorer/ex2/)
+- [Exercise 3 - Using the SQL Console](exercises/database_explorer/ex3/)
 
 ## Exercises
 
