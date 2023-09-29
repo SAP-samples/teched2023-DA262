@@ -23,5 +23,5 @@ The SAP HANA Cloud Central tool is divided into several sections:
 
 As an SAP HANA Cloud administrator, you will likely spend a lot of time monitoring all your instances in SAP HANA Cloud Central.  From the instances list, you'll be able to see computing details of your databases, whether they are running or stopped, review their notifications, and perform actions on them.
 
-Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
+Continue to - [Exercise 2: Create & Edit instances](../ex2/README.md)
 
