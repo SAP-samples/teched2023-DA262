@@ -2,7 +2,7 @@
 
 # Session DA262 - SAP HANA Cloud from an administrator's perspective
 
-## Description (JOSE)
+## Description
 
 This repository contains the material for the SAP TechEd 2023 session called DA262 - SAP HANA Cloud from an administrator's perspective.  
 
