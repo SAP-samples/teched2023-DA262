@@ -8,78 +8,24 @@ This repository contains the material for the SAP TechEd 2023 session called DA2
 
 ## Overview
 
-This session introduces attendees to the end-to-end picture of operations required for running the SAP HANA Cloud database, using the Web-based tools SAP HANA Cloud Central and SAP HANA database explorer. 
+This session introduces attendees to the end-to-end picture of operations required for running the SAP HANA Cloud database, using the Web-based tools SAP HANA Cloud Central, SAP HANA Cockpit, and SAP HANA database explorer. 
 
 ## Requirements
 
-To complete this workshop, you need access to an SAP Business Technology Platform (SAP BTP) account. You can access SAP HANA Cloud from within SAP BTP and you can use a trial, free tier,  or productive version of SAP HANA Cloud.  **This workshop assumes that you already have a SAP BTP account and an SAP HANA Cloud database.**  If you do not already have an SAP BTP account to use, you can register for free at https://www.sap.com/cmp/td/sap-hana-cloud-trial.html.  The exercises make use of a **trial account**, but a [free tier](https://developers.sap.com/tutorials/btp-free-tier-account.html) account can also be used.  A benefit of using free tier is that the account can be upgraded to a paid service plan without having to re-create the account but may take longer to signup.
-
-After registering for a trial account using the link above, open your SAP BTP Cockpit and get started by creating a SAP HANA Cloud instances.
-
-1. Open the [welcome page](https://account.hanatrial.ondemand.com/trial/#/home/trial) and go to your trial account.
-    ![go to your trial account button](images/go-to-trial.png)
-
-2. Enter the subaccount.
-
-    ![enter the subaccount](images/subaccount.png)
-
-3. Navigate to **Instances and Subscriptions** and then add a subscription to the **SAP HANA Cloud tooling**.  
-
-    ![create a subscription](images/subscriptions.png)
-
-    For the service select **SAP HANA Cloud** and for the plan select **tools**.
-
-    ![new subscription](images/subscribe-to-the-tooling.png)
-
-    A new subscription to SAP HANA Cloud Central will appear.
-
-    ![subscription created](images/subscription-created.png)
-
-4. To access the tools three roles are provided:
-
-    * SAP HANA Cloud Administrator 
-
-    *  SAP HANA Cloud Security Administrator - provides the ability to reset the DBADMIN and HDLADMIN passwords
-
-    * SAP HANA Cloud Viewer - provides read-only access to SAP HANA Cloud Central
-
-    Navigate to **Security > Users** and click on your user.  
-
-    ![users](images/users.png)
-    
-    Click on **Assign Role Collection**.
-
-    ![assign role collection](images/assign-role-collection.png)
-    
-     Add the role collection **SAP HANA Cloud Administrator**.
-
-5.	Under Instances and Subscriptions, open SAP HANA Cloud Central.
-
-    ![open SAP HANA Cloud Central](images/subscription-created.png)
-
-6.	Click the button **Create** in the top right and select SAP HANA Cloud, SAP HANA Database to invoke the Create Instance wizard.  
-    > Only one instance of a HANA Cloud database can be created in trial or free tier accounts.  If you already have an SAP HANA Cloud database instance created, it can be used.
-    
-    ![create instance in HCC](images/HANA-Cloud-Central.png)
-
-7.  Choose **SAP HANA Cloud, SAP HANA Database** and click the button **Next Step**.
-
-8.  Use default values for the remainder of the wizard, with the following exceptions:
-    * In Step 2 (General), enter **DEMO_HANA_DB** for the instance name. Enter and confirm your administrator password – ***PLEASE REMEMBER IT AND/OR WRITE IT DOWN!***
-    * In Step 6 (Data Lake), turn on the toggle switch to Create Data Lake. Enter **DEMO_HANA_HDL** for the instance name.
-
-9.	Complete the wizard.
-
-    The SAP HANA Cloud instances DEMO_HANA_DB and DEMO_HANA_HDL will be created, and this process may take  approx. 10 minutes.  The frequency of updates to the page can be set using the auto-refresh feature in the top right.  Once the instances are created, their status will change to RUNNING.
-
-    ![creating or running](images/creating.png)
-
-Feel free to move to the next exercise on the SAP BTP while waiting for the SAP HANA Cloud, SAP HANA database instance to switch to a running status.
+To complete this workshop, you need access to an SAP Business Technology Platform (SAP BTP) account and the SAP HANA Cloud service. You can access SAP HANA Cloud from within the SAP BTP and you can use an account provided for this session or a trial, free tier, or productive version of SAP SAP BTP.  
 
 ## SAP Business Technology Platform (SAP BTP) - 5 minutes
 The SAP BTP brings together data and analytics, artificial intelligence, application development, automation, and integration in one, unified environment.
 
-- [Exercise 1 - Overview of the SAP Business Technology Platform](exercises/sap_btp/ex1/)
+Choose a method to access the SAP BTP:
+
+  - [Exercise 1:  A shared SAP BTP subaccount](exercises/sap_btp/ex1) is available for the attendees of this hands-on workshop.
+
+  * [Exercise 2:  Trial, free-tier or productive account](exercises/sap_btp/ex1) can be used if you are not in attendance at the session or if you would prefer to setup or use your own SAP BTP account.
+
+Then get an overview of the SAP BTP.
+
+- [Exercise 3 - Overview of the SAP Business Technology Platform](exercises/sap_btp/ex3/)
 
 ## SAP HANA Cloud Central - 60 minutes
 
