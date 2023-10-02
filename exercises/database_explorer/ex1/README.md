@@ -46,8 +46,6 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 
     More information on the SAP HANA monitoring views can be found at [Monitoring Views](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/2021_3_QRC/en-US/d3c10d23e8334a35afa8d9bdbc102366.html). 
 
-    Additional schema objects previously created in the HOTEL schema can also be found and examined such as tables, views, functions, and procedures.
-
 ## Exercise 1.4 Set the Instance's Usage
 
 1. Users may benefit from visual clues identifying  production instances. This next step will demonstrate how to label production instances, and how to remove the production label from an instance. To enable this, use the SQL console to run the statements below and refresh your browser.
@@ -82,6 +80,20 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
     An instance can be quickly found using the filter as shown below.
     
     ![](images/Filter.png)
+
+## Exercise 1.6 Add an Instance with Different Credentials
+
+1. Add a new instance with a different set of credentials.
+
+    ![](images/Add-database-with-a-different-user2.png)
+
+    Provide the user name and password which are USER1 Password1 and update the name of the instance.
+
+    ![](images/Add-database-with-a-different-user.png)
+
+    After clicking OK, a new instance is added that is using a different set of credentials.
+
+    ![](images/Add-database-with-a-different-user3.png)
 
 This concludes the exercise on launching and exploring instances in the SAP HANA database explorer.
 

@@ -4,7 +4,7 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
 ## Exercise 2.1 Viewing a List of Database Objects
 
-1. Database objects can be viewed in the catalog browser as shown below after selecting the HDI container connection and then **Tables**.
+1. Database objects such as tables, views, functions, and procedures can be viewed in the catalog browser as shown below.
 
     ![](images/tables.png)
 
@@ -26,17 +26,31 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
 ## Exercise 2.3 Debugging a Stored Procedure
 
-1. A graphical debugger can be used.  Add a breakpoint on line 19.
+1. A graphical debugger can be used.  In the instance connection that uses USER1, open the stored procedure `RESERVATION_GENERATOR` for debuggging.
 
     ![](images/OpenForDebugging.png)
+
+2. The debugger attach options dialog will appear after a few moments. Press **OK**.
+
+    ![](images/debugger-attach-options.png)
+
+3. Set a breakpoint on line 52.
+
+    ![](images/Debugging-add-breakpoint.png)
   
-2. To trigger the breakpoint, call the stored procedure.
+4. To trigger the breakpoint, call the stored procedure.
 
     ![](images/CallStoredProcedure.png)
 
-3. Once the breakpoint has been hit, the variables can be examined, and the code stepped through.
+    ![](images/Debugging-call-with-param.png)
+
+5. Once the breakpoint has been hit, the variables can be examined, and the code stepped through.
 
     ![](images/Debugging.png)
+
+6. When finished debugging, the debugger can be disconnected and the view closed.
+
+    ![](images/stop-debugging.png)
 
 ## Exercise 2.4 Analyzing Stored Procedures
 
@@ -48,11 +62,9 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
     ![](images/AnalyzeSQLScriptCode2.png)
     
-    *Note that the input parameter is not referenced.*
-
 ## Exercise 2.5 Using Object Search
 
-1. Database objects can also be found using **Object Search**.  The search shown below looks for any objects that use FLIGHTRESERVATION in their schema name in the HDI container. 
+1. Database objects can also be found using **Object Search**.  The search shown below looks for any objects that use RESERVATION in their name that are functions, procedures, tables, or views. 
 
     ![](images/ObjectSearch.png)
 
