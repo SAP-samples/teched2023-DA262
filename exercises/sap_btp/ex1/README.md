@@ -6,13 +6,17 @@ This exercise will provide instructions on how to access the shared subaccount p
 
 2. Login with the provided SAP BTP user and password provided in the hands-on workshop.
 
-    ![]()
+    ![sign in](images/sign-in.png)
 
-3. Navigate into the subaccount DA262
+3. Navigate into the subaccount DA262.
+
+    ![SAP BTP Global Account](images/global-account.png)
 
 3. Open SAP HANA Cloud Central.
 
-    ![](images/open-hcc.png)
+    ![SAP HANA Cloud Central](images/open-hcc.png)
+
+    Additional instructions are optionally provided in [Register for a Trial SAP BTP Account](../ex2/README.md) on the steps required to subscribe to SAP HANA Cloud Central and how to assign the appropriate role collections to your SAP BTP user.  
 
 ## Summary
 
