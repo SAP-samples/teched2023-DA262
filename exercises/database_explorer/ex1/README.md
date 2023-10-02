@@ -1,6 +1,6 @@
 # Exercise 1 - Launch the SAP HANA Database Explorer
 
-In addition to browsing schema objects and executing SQL, the SAP HANA database explorer enables importing and exporting data with wizards, debugging SQLScript, working with multi-model data such as graph, spatial and JSON collections,  viewing trace files, and creating remote sources.  It also offers support for data lake Relational Engine and data lake Files connections.  Additional information including [what's new](https://help.sap.com/whats-new/2495b34492334456a49084831c2bea4e?Category=SAP%2520HANA%2520Database%2520Explorer&locale=en-US) can be found by consulting the product documentation from the help icon.
+The SAP HANA database explorer enables schema browsing and contains a SQL Console with slightly different functionality from SAP HANA Cloud Central.  The SAP HANA database explorer enables importing and exporting data with wizards, debugging SQLScript, working with multi-model data such as graph, spatial and JSON collections,  viewing trace files, and creating remote sources.  It also offers support for data lake Relational Engine and data lake Files connections.  Additional information including [what's new](https://help.sap.com/whats-new/2495b34492334456a49084831c2bea4e?Category=SAP%2520HANA%2520Database%2520Explorer&locale=en-US) can be found by consulting the product documentation from the help icon.
 
 ![](images/Help.png)
 
@@ -8,13 +8,13 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 
 ## Exercise 1.1 Open the SAP HANA Database Explorer
 
-1. From either the SAP BTP Cockpit or from SAP HANA Cloud Central, select the SAP HANA instance and choose **Open in SAP HANA Database Explorer**.
+1. From SAP HANA Cloud Central, select the SAP HANA instance and choose **Open in SAP HANA Database Explorer**.
 
     ![](images/OpenSQLConsole.png)
 
-    You may be prompted to enter database login credentials at this point. Enter **DBADMIN** for the user and the password that was specified in the SAP HANA instance creation wizard.
+    You may be prompted to enter database login credentials at this point. Enter **DBADMIN** for the user and the password that was provided in the workshop or specified in the SAP HANA instance creation wizard.
 
-    >Credentials for a cockpit database can be persisted by setting them within the SAP HANA cockpit which is covered later in this workshop.  
+    >Credentials for a database opened from SAP HANA Cloud Central are managed by SAP HANA Cloud Central.  
     >
     >![](images/Authentication.png)
     
@@ -28,7 +28,7 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 
     ![](images/ShowOverview.png)
 
-    *In this example, the instance is the QRC 3 2022 release.*
+    *In this example, the instance is the QRC 3 2023 release.*
 
 ## Exercise 1.3 Search For a View Using a Schema Filter
 
@@ -46,9 +46,11 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 
     More information on the SAP HANA monitoring views can be found at [Monitoring Views](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/2021_3_QRC/en-US/d3c10d23e8334a35afa8d9bdbc102366.html). 
 
+    Additional schema objects previously created in the HOTEL schema can also be found and examined such as tables, views, functions, and procedures.
+
 ## Exercise 1.4 Set the Instance's Usage
 
-1. Users may benefit from visual clues identifying  production instance. This next step will demonstrate how to label production instances, and how to remove the production label from an instance. To enable this, use the SQL console to run the statements below and refresh your browser.
+1. Users may benefit from visual clues identifying  production instances. This next step will demonstrate how to label production instances, and how to remove the production label from an instance. To enable this, use the SQL console to run the statements below and refresh your browser.
    
     >To open the SQL console, right-click on the instance and select **Open SQL Console** or click on the toolbar icon in the top left after selecting an instance.  
 

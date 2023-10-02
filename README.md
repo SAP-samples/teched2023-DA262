@@ -8,7 +8,7 @@ This repository contains the material for the SAP TechEd 2023 session called DA2
 
 ## Overview
 
-This session introduces attendees to the end-to-end picture of operations required for running the SAP HANA Cloud database, using the Web-based tools SAP HANA Cloud Central, SAP HANA Cockpit, and SAP HANA database explorer. 
+This session introduces attendees to the end-to-end picture of operations required for running the SAP HANA Cloud database, using the Web-based tools SAP HANA Cloud Central and SAP HANA database explorer. 
 
 ## Requirements
 
