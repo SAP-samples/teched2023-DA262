@@ -66,6 +66,6 @@ Feel free to move to the next exercise on the SAP BTP while waiting for the SAP 
 
 ## Summary
 
-You now have opened the SAP BTP Cockpit and have opened SAP HANA Cloud Central which is the central tool used for administration of SAP HANA Cloud instances.
+You now have registered for a trial account, opened the SAP BTP Cockpit, and have subscribed to and opened SAP HANA Cloud Central which is the central tool used for administration of SAP HANA Cloud instances.
 
 Continue to - [Exercise 3 - Overview of the SAP Business Technology Platform](../ex3/README.md)

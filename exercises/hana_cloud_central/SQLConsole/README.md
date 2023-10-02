@@ -1,26 +1,38 @@
 # SQL Console
 
-This exercise will demonstrate the functionality in the SQL Console that is included in SAP HANA Cloud Central.  
+This exercise will demonstrate the functionality in the SQL Console that is included in SAP HANA Cloud Central.  The same SQL Console component is also available in the SAP HANA database explorer extension for Visual Studio Code and the SAP Business Application Studio.   
 
-1. The SQL Console can be opened in multiple ways as shown below.  Select one of the methods and open the SQL Console.
+1. The SQL Console can be opened in multiple ways as shown below.  Explore the various ways the SQL Console can be opened.
 
     * It can be opened from the apps sidebar.
     
-    ![open from the side bar](images/open-from-sidebar.png)
+        ![open from the side bar](images/open-from-sidebar.png)
 
-    * It can be opened from the actions menu.
+    * It can be opened from the action menu.
 
-    ![open from the actions menu](images/open-from-actions-menu.png)
+        ![open from the action menu](images/open-from-actions-menu.png)
 
     * It can be opened from details page.
 
-    ![open from details page](images/open-from-details-page.png) 
+        ![open from details page](images/open-from-details-page.png) 
 
-2. Demonstrate how to connect
+    * It can be opened from Search Commands.
+    
+        ![open from search commands](images/open-from-search-commands.png)
 
-3. Mention how to load or export SQL statements.   Note that unlike the SAP HANA database explorer, the SQL Console tabs are not currently preserved between browser reloads.
+2. An instance that the SQL Console is connected to can be selected in the instance dialog.
 
-4. Execute the below SQLScript to create a usergroup, two users, two roles, a schema, a few tables, views, stored procedures, and functions.
+    ![Instance selection](images/instance-selection.png)
+
+3. Additional SQL Console tabs can be opened.
+
+    ![open additional SQL Console tabs](images/open-sql-console-tab.png)
+
+4. The contents of a SQL Console can be downloaded or uploaded.  Currently the contents of a SQL Console are not preserved between browser reloads.
+
+    ![download or upload](images/download-and-upload.png)
+
+5. Execute the below SQLScript to create a usergroup, two users, two roles, a schema, a few tables, views, stored procedures, and functions.  If you are attending SAP TechEd and are using the shared instance, this SQL will already have been executed.
 
     ```SQL
     CREATE USERGROUP HOTEL_USER_GROUP SET PARAMETER 'minimal_password_length' = '8', 'force_first_password_change' = 'FALSE';
@@ -174,7 +186,9 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
     END;
     ```
 
-5. Execute the following SQL statements to add some data to the tables.
+    ![create schema](images/create-schema.png)
+
+6. Execute the following SQL statements to add some data to the tables.  If you are attending SAP TechEd and are using the shared instance, this SQL will already have been executed.
 
     ```SQL
     INSERT INTO HOTEL VALUES(10, 'Congress', '155 Beechwood St.', 'Seattle', 'WA', '98121', NEW ST_POINT('POINT(-122.347340 47.610546)', 4326));
@@ -266,42 +280,101 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
     INSERT INTO MAINTENANCE VALUES(12, 26, 'Roof repair due to storm', null, null);
     ```
 
-6. Demonstrate how to connect with a different user
+7. The user can be changed with the connect statement and viewed with the CURRENT_USER function.
 
-7. Demonstrate how to change the schema
+    ```SQL
+    CONNECT USER1 PASSWORD Password1;
+    SELECT CURRENT_USER, CURRENT_SCHEMA FROM DUMMY;
+    ```
 
-8. Demonstrate settings
+    ![viewing the current user](images/current-user.png)
 
-9. If an error occurs while executing SQL statements, a dialog will appear enabling you to choose to continue or stop.  
+    Notice that the schema also changes when the connected user is changed.
+
+    Another technique to see the current user is to view the instance details dialog.
     
-    ```SQL
+    ![](images/todo.png)
 
-    ```
-
-    The error details can be seen in the following ways.  Demonstrate error markers and shortcut key to navigate between errors.  Also mention the error is shown in the messages.
-
-10. Demonstrate calling a function and a stored procedure.  Parameters can be provided when executing a query.
+8. An example of changing the schema is shown below.  Press skip when the SQL Execution Error dialog appears.
 
     ```SQL
-    SELECT AVERAGE_PRICE('single') from dummy;
-    SELECT AVERAGE_PRICE(?) from dummy;  --parameters entry appears, enter suite
-    CALL RESERVATION_GENERATOR(NUMTOGENERATE => 10);
-    CALL RESERVATION_GENERATOR(NUMTOGENERATE => ?); --parameters entry appears, enter 100
+    SELECT * FROM CUSTOMER;
+    SELECT * FROM HOTEL.CUSTOMER;
+    SET SCHEMA HOTEL;
+    SELECT * FROM CUSTOMER;
     ```
 
-11. Demonstrate statement help
+    ![Set the schemea](images/change-schema.png)
 
-12. Demonstrate the result tabs
+    Notice that when the first SQL statement is executed, the schema is still USER1 and the select statement fails as the CUSTOMER table is in the schema HOTEL but that the last SELECT statement succeeds because the schema has been changed to HOTEL.
 
-13. Shortcut keys
+9. Execute the following SQL which is used to illustrate the x settings.
 
-14. Exporting results
+    ```SQL
+    SELECT COUNT(*) FROM SYS.TABLE_COLUMNS;
+    SELECT * FROM TABLE_COLUMNS;
+    SELECT * FROM M_SYSTEM_INFORMATION_STATEMENTS;
+    ```
 
-15. Show the integration when using Search Commands in HCC
+    Notice that over 6000 rows are in TABLE_COLUMNS but only the first 1000 are returned.
+
+    ![one thousand row limit](images/settings-result1.png)
+
+    Notice that only the first 1024 bytes from the column STATEMENT are displayed in the results view for the Blocked Transactions row.  These limits can be adjusted in the connection settings dialog.
+
+    ![connection settings dialog](images/settings-result2.png)
+
+10. A function or stored procedure can be called.  If an input parameter is needed, a section will appear where their values can be entered as shown below.
+
+    ```SQL
+    --SELECT AVERAGE_PRICE('single') FROM DUMMY;
+    SELECT AVERAGE_PRICE(room_type => ?) FROM DUMMY;  --parameters entry appears, enter suite  --parameters entry appears, enter single, double, or suite
+    ```
+
+    ![run with parameters](images/run-with-parameters.png)
+
+11. TODO messages and history tabs.
+
+12. TODO JSON, XML viewers
+
+13. Statement help can be shown.  Notice that details of the table and function used in the current statement is shown.
+
+    ![statement help](images/statement-help.png)
+
+14. A few of the common shortcut keys are listed below.  Try a few of them out.
+
+    Action | Shortcut
+    ------ | ------
+    Add Comment Block | Ctrl+Shift+/
+    Comment/Uncomment Line | Ctrl+/
+    Go to Next Error | Alt+E
+    Go to Previous Error | Alt+Shift+E
+    Jump to Matching Brackets | Ctrl+P
+    Run All | F8
+    Run Statement |	F9
+    Text Completion | Ctrl+Space 
+
+    >Note: The shortcut keys may vary depending on the browser used.
+
+15. Results can be downloaded directly from the SQL Console as shown below.  Try it out by executing the following statement and then downloading and copying the results.
+
+    ```SQL
+    SELECT * FROM RESERVATION_VIEW;
+    ```
+
+    ![download results](images/download-results.png)
+
+    Options are provided on how to format the data.
+
+    ![download options](images/download-options.png)
+
+    Rows can also be selected and copied to the clipboard by pressing Ctrl+C.
+
+    ![copy results](images/copy-results.png)
 
 ## Summary
 
-You now have an overview of the featurs of the SQL Console in SAP HANA Cloud Central.  Further details can be found in the tutorial learning journey [Query Databases Using the SQL Console in SAP HANA Cloud Central](https://developers.sap.com/tutorials/hana-dbx-hcc.html).
+You now have an overview of the features of the SQL Console in SAP HANA Cloud Central.  Further details can be found in the tutorial learning journey [Query Databases Using the SQL Console in SAP HANA Cloud Central](https://developers.sap.com/tutorials/hana-dbx-hcc.html).
 
 Continue to - [Exercise 1 - Overview of the SAP HANA database explorer](../../database_explorer/ex1/README.md)
 

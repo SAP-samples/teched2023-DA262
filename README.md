@@ -12,18 +12,16 @@ This session introduces attendees to the end-to-end picture of operations requir
 
 ## Requirements
 
-To complete this workshop, you need access to an SAP Business Technology Platform (SAP BTP) account and the SAP HANA Cloud service. You can access SAP HANA Cloud from within the SAP BTP and you can use an account provided for this session or a trial, free tier, or productive version of SAP SAP BTP.  
+To complete this workshop, you need access to an SAP Business Technology Platform (SAP BTP) account and the SAP HANA Cloud service. You can use an account provided for this session or a trial, free tier, or productive version of SAP SAP BTP.  
 
 ## SAP Business Technology Platform (SAP BTP) - 5 minutes
 The SAP BTP brings together data and analytics, artificial intelligence, application development, automation, and integration in one, unified environment.
 
-Choose a method to access the SAP BTP:
+Choose a method to access the SAP BTP by following Exercise 1 or Exercise 2 below:
 
-  - [Exercise 1:  A shared SAP BTP subaccount](exercises/sap_btp/ex1) is available for the attendees of this hands-on workshop.
+- [Exercise 1:  Access the SAP BTP Shared Subaccount for DA262](exercises/sap_btp/ex1) is available for the attendees of this hands-on workshop.
 
-  * [Exercise 2:  Trial, free-tier or productive account](exercises/sap_btp/ex1) can be used if you are not in attendance at the session or if you would prefer to setup or use your own SAP BTP account.
-
-Then get an overview of the SAP BTP.
+- [Exercise 2:  Register for a Trial SAP BTP Account](exercises/sap_btp/ex1) can be used if you are not in attendance at the session or if you would prefer to setup and use your own SAP BTP account.
 
 - [Exercise 3 - Overview of the SAP Business Technology Platform](exercises/sap_btp/ex3/)
 
