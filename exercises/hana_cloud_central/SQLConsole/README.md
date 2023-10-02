@@ -8,31 +8,35 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
     
         ![open from the side bar](images/open-from-sidebar.png)
 
-    * It can be opened from the action menu.
+    * It can be opened from the action menu and then opens in a connected state.
 
         ![open from the action menu](images/open-from-actions-menu.png)
 
-    * It can be opened from details page.
+    * It can be opened from details page and then opens in a connected state.
 
         ![open from details page](images/open-from-details-page.png) 
 
-    * It can be opened from Search Commands.
+    * It can be opened from Search Commands and then opens in a connected state.
     
         ![open from search commands](images/open-from-search-commands.png)
 
-2. An instance that the SQL Console is connected to can be selected in the instance dialog.
+2. An instance that the SQL Console is connected to can be changed in the instance dialog.
 
     ![Instance selection](images/instance-selection.png)
 
-3. Additional SQL Console tabs can be opened.
+    There is a filter for SAP HANA database and data lake Relational Engine instances and a search bar.  Previously specified connections can be reused so the user name and password for the database does not need to be re-entered.
+
+    ![connected instance dialog](images/connected-instance-dialog.png)
+
+3. Additional SQL Console tabs can be opened perhaps connecting to different instances or to the same instance but with a different set of credentials.
 
     ![open additional SQL Console tabs](images/open-sql-console-tab.png)
 
-4. The contents of a SQL Console can be downloaded or uploaded.  Currently the contents of a SQL Console are not preserved between browser reloads.
+4. The contents of a SQL Console can be downloaded or uploaded.  The contents of a SQL Console are not preserved between browser reloads in the current version.
 
     ![download or upload](images/download-and-upload.png)
 
-5. Execute the below SQLScript to create a usergroup, two users, two roles, a schema, a few tables, views, stored procedures, and functions.  If you are attending SAP TechEd and are using the shared instance, this SQL will already have been executed.
+5. Execute the below SQLScript to create a usergroup, two users, two roles, a schema, a few tables, views, stored procedures, and functions.  **If you are attending SAP TechEd and are using the shared instance, this SQL will already have been executed**.
 
     ```SQL
     CREATE USERGROUP HOTEL_USER_GROUP SET PARAMETER 'minimal_password_length' = '8', 'force_first_password_change' = 'FALSE';
@@ -188,7 +192,7 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
 
     ![create schema](images/create-schema.png)
 
-6. Execute the following SQL statements to add some data to the tables.  If you are attending SAP TechEd and are using the shared instance, this SQL will already have been executed.
+6. Execute the following SQL statements to add some data to the tables.  **If you are attending SAP TechEd and are using the shared instance, this SQL will already have been executed**.
 
     ```SQL
     INSERT INTO HOTEL VALUES(10, 'Congress', '155 Beechwood St.', 'Seattle', 'WA', '98121', NEW ST_POINT('POINT(-122.347340 47.610546)', 4326));
@@ -293,9 +297,9 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
 
     Another technique to see the current user is to view the instance details dialog.
     
-    ![](images/todo.png)
+    TODO feature coming soon.  ![](images/todo.png)
 
-8. An example of changing the schema is shown below.  Press skip when the SQL Execution Error dialog appears.
+8. An example of changing the schema is shown below.  
 
     ```SQL
     SELECT * FROM CUSTOMER;
@@ -304,11 +308,25 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
     SELECT * FROM CUSTOMER;
     ```
 
+    Press **Skip** when the SQL Execution Error dialog appears.
+
+    ![sql execution error](images/sql-execution-error.png)
+    
     ![Set the schemea](images/change-schema.png)
 
-    Notice that when the first SQL statement is executed, the schema is still USER1 and the select statement fails as the CUSTOMER table is in the schema HOTEL but that the last SELECT statement succeeds because the schema has been changed to HOTEL.
+    Notice that when the first SQL statement is executed, the schema is still set to USER1 and the select statement fails as the CUSTOMER table is in the schema HOTEL but that the last SELECT statement succeeds because the schema has been changed to HOTEL.
 
-9. Execute the following SQL which is used to illustrate the x settings.
+    Alternatively, the schema can be set using the schema selection dialog
+
+    ![schema selection dialog](images/change-schema2.png)
+
+    The schemas that the current user has access to are displayed.
+
+9. Examine the **Connection Settings**.  
+
+    ![connection settings](images/connection-settings.png)
+
+    Execute the following SQL which is used to illustrate the settings.
 
     ```SQL
     SELECT COUNT(*) FROM SYS.TABLE_COLUMNS;
@@ -316,26 +334,74 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
     SELECT * FROM M_SYSTEM_INFORMATION_STATEMENTS;
     ```
 
+    Notice that only the first 1024 bytes from the column STATEMENT are displayed in the results view for the Blocked Transactions row.  These limits can be adjusted in the connection settings dialog.
+
+    ![limit for large objects](images/settings-result3.png)
+
     Notice that over 6000 rows are in TABLE_COLUMNS but only the first 1000 are returned.
 
     ![one thousand row limit](images/settings-result1.png)
 
-    Notice that only the first 1024 bytes from the column STATEMENT are displayed in the results view for the Blocked Transactions row.  These limits can be adjusted in the connection settings dialog.
+    ![one thousand row limit](images/settings-result2.png)
 
-    ![connection settings dialog](images/settings-result2.png)
-
-10. A function or stored procedure can be called.  If an input parameter is needed, a section will appear where their values can be entered as shown below.
+10. Execute the following SQL statement.
 
     ```SQL
     --SELECT AVERAGE_PRICE('single') FROM DUMMY;
-    SELECT AVERAGE_PRICE(room_type => ?) FROM DUMMY;  --parameters entry appears, enter suite  --parameters entry appears, enter single, double, or suite
+    SELECT AVERAGE_PRICE(room_type => ?) FROM DUMMY;  --room type values are single, double, or suite
     ```
+
+    As an input parameter is needed, a section will appear where values can be entered as shown below.
 
     ![run with parameters](images/run-with-parameters.png)
 
-11. TODO messages and history tabs.
+11. Execute the following SQL statements.
 
-12. TODO JSON, XML viewers
+    ```SQL
+    SELECT AVERAGE_PRICE('single') FROM DUMMY;
+    SELECT * FROM TABLE_COLUMNS;
+    ```
+
+    Open the **Messages** tab in the results.  Notice that metrics such as client elapsed time and peak memory consumed are shown.
+
+    ![metrics in the messages tab](images/messages.png)
+
+    Open the **History** tab.  Notice that a summary of the statements executed is available.
+
+    ![history tab](images/history.png)
+
+    These values can be cleared by refreshing the browser.
+
+12. Execute the following SQL statements.
+
+    ```SQL
+    SELECT'{ "name":"John", "age":30, "cars": { "car1":"Ford", "car2":"BMW", "car3":"Fiat" }}'
+    AS JSON_EXAMPLE FROM DUMMY;
+
+    SELECT '<?xml version="1.0" encoding="UTF-8"?>
+        <breakfast_menu>
+            <food>
+                <name>Belgian Waffles</name>
+                <price>$5.95</price>
+                <description>
+            Two of our famous Belgian Waffles with plenty of real maple syrup
+            </description>
+                <calories>650</calories>
+            </food>
+            <food>
+                <name>French Toast</name>
+                <price>$4.50</price>
+                <description>
+                Thick slices made from our homemade sourdough bread
+                </description>
+                <calories>600</calories>
+            </food>
+        </breakfast_menu>' XML_EXAMPLE FROM DUMMY;
+    ```
+
+    Double click on a result and notice the result is formatted or can be shown in raw text. 
+
+    ![JSON viewer](images/json-viewer.png)
 
 13. Statement help can be shown.  Notice that details of the table and function used in the current statement is shown.
 
@@ -347,6 +413,8 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
     ------ | ------
     Add Comment Block | Ctrl+Shift+/
     Comment/Uncomment Line | Ctrl+/
+    To Uppercase | Ctrl+Alt+U
+    To Lowercase | Ctrl+Shift+U
     Go to Next Error | Alt+E
     Go to Previous Error | Alt+Shift+E
     Jump to Matching Brackets | Ctrl+P
@@ -356,11 +424,13 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
 
     >Note: The shortcut keys may vary depending on the browser used.
 
-15. Results can be downloaded directly from the SQL Console as shown below.  Try it out by executing the following statement and then downloading and copying the results.
+15. Execute the followng SQL statement.
 
     ```SQL
     SELECT * FROM RESERVATION_VIEW;
     ```
+
+    Results can be downloaded directly from the SQL Console as shown below.
 
     ![download results](images/download-results.png)
 
@@ -368,7 +438,7 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
 
     ![download options](images/download-options.png)
 
-    Rows can also be selected and copied to the clipboard by pressing Ctrl+C.
+    Rows can also be selected and then copied to the clipboard by pressing **Ctrl+C**.
 
     ![copy results](images/copy-results.png)
 
