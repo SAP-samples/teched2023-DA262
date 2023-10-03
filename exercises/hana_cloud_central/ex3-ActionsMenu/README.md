@@ -16,6 +16,13 @@ In this exercise, we will discuss the *Manage Configuration* functionality acros
     
     ![Change Allowed connections](images/3.png)
 
-## Exercise 3.2: Start, Stop Instance
+## Exercise 3.2: Start, Stop, Upgrade Instance
+In this section, we will discuss about how to start, stop, and upgrade instances from the SAP HANA Cloud Central application.
+
+
+
+
+
+
 
 Continue to - [Exercise 4 - Refresh and Auto-Refresh](../ex4-Refresh/README.md)

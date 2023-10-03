@@ -1,6 +1,6 @@
 # Exercise 1: Overview of SAP HANA CLoud Central
 
-[//]: # (some discription about HCC)
+The SAP HANA Cloud Central can be used to administer data lake, but this exercise will focus on SAP HANA database. With the SAP HANA Cloud Central, you can monitor resource utilization (memory, CPU and disk), alerts, table usage, database services, SAP HANA native storage extensions (NSE), and database performance metrics (threads, sessions, SQL statements, workload classes and connections). You can also view backups, manage configuration parameters, manage table distribution, administer smart data access (SDA) and administer smart data integration (SDI). Finally, you can perform security tasks such as user and role management, data encryption, auditing, data anonymization and trust configuration.
 
 This exercise will teach you the basics of navigating the Database Overview Page and how to find the information you need as a database administrator. To begin, ensure you have logged in to the SAP BTP Cockpit and you have navigated to the "SAP HANA Cloud" page.
 
