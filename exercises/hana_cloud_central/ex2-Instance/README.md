@@ -5,6 +5,8 @@ Your note text here
 > **Warning**
 Your warning text here
 
+> :warning: **This is a Warning**:testing for emoji
+
  Before we start the exercise, please read the following important instruction.
 
 As a prerequisite, we have already created an SAP HANA Cloud, SAP HANA Database instance: "DEMO_HANA_DB". Your trial account allows creation of only one database instance. 
