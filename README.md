@@ -21,7 +21,7 @@ Choose a method to access the SAP BTP by following Exercise 1 or Exercise 2 belo
 
 - [Exercise 1:  Access the SAP BTP Shared Subaccount for DA262](exercises/sap_btp/ex1) is available for the attendees of this hands-on workshop using credentials provided during the session.
 
-- [Exercise 2:  Register for a Trial SAP BTP Account](exercises/sap_btp/ex1) can be used if you are not in attendance at the session or if you would prefer to setup and use your own SAP BTP account.
+- [Exercise 2:  Register for a Trial SAP BTP Account](exercises/sap_btp/ex2) can be used if you are not in attendance at the session or if you would prefer to setup and use your own SAP BTP account.
 
 - [Exercise 3 - Overview of the SAP Business Technology Platform](exercises/sap_btp/ex3/)
 
@@ -31,9 +31,14 @@ SAP HANA Cloud Central provides database administrators (DBAs) with a unified to
 
 - [Exercise 1 - Overview of SAP HANA Cloud Central](exercises/hana_cloud_central/ex1-overview/)
 - [Exercise 2 - Create, Edit, Start, and Stop Instances](exercises/hana_cloud_central/ex2-Instance/)
-- [Exercise 3 - ?](exercises/hana_cloud_central/ex3-OtherActions/)
+- [Exercise 3 - Action Menu](exercises/hana_cloud_central/ex3-ActionsMenu/)
 - [Exercise 4 - Refresh and Auto-Refresh](exercises/hana_cloud_central/ex4-refresh/)
+- [Exercise 5 - Command Palette](exercises/hana_cloud_central/ex5-CommandPalette/)
+- [Exercise 6 - Alerts](exercises/hana_cloud_central/ex6-alerts/)
 - [Exercise 7 - SQL Console](exercises/hana_cloud_central/ex7-SQLConsole)
+- [Exercise 8 - The Databsed Overview Page](exercises/hana_cloud_central/ex8-dboverview/)
+- [Exercise 9 - Monitoring Memory Usage](exercises/hana_cloud_central/ex9-Memory/)
+
 
 ## SAP HANA Database Explorer - 20 minutes
 The SAP HANA database explorer is a web-based tool for browsing and working with  database schema objects such as tables, views, and stored procedures and executing SQL.
