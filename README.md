@@ -19,7 +19,7 @@ The SAP BTP brings together data and analytics, artificial intelligence, applica
 
 Choose a method to access the SAP BTP by following Exercise 1 or Exercise 2 below:
 
-- [Exercise 1:  Access the SAP BTP Shared Subaccount for DA262](exercises/sap_btp/ex1) is available for the attendees of this hands-on workshop.
+- [Exercise 1:  Access the SAP BTP Shared Subaccount for DA262](exercises/sap_btp/ex1) is available for the attendees of this hands-on workshop using credentials provided during the session.
 
 - [Exercise 2:  Register for a Trial SAP BTP Account](exercises/sap_btp/ex1) can be used if you are not in attendance at the session or if you would prefer to setup and use your own SAP BTP account.
 

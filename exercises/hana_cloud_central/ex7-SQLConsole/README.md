@@ -1,6 +1,6 @@
-# SQL Console
+# Exercise X - SQL Console
 
-This exercise will demonstrate the functionality in the SQL Console that is included in SAP HANA Cloud Central.  The same SQL Console component is also available in the SAP HANA database explorer extension for Visual Studio Code and the SAP Business Application Studio.   
+This exercise will demonstrate the functionality in the SQL Console that is included in SAP HANA Cloud Central.  The same SQL Console component is also available in the [SAP HANA database explorer](https://marketplace.visualstudio.com/items?itemName=SAPSE.hana-database-explorer) extension for Visual Studio Code and the SAP Business Application Studio.   
 
 1. The SQL Console can be opened in multiple ways as shown below.  Explore the various ways the SQL Console can be opened.
 
@@ -8,19 +8,33 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
     
         ![open from the side bar](images/open-from-sidebar.png)
 
-    * It can be opened from the action menu and then opens in a connected state.
+    * It can be opened from the action menu.
 
         ![open from the action menu](images/open-from-actions-menu.png)
 
-    * It can be opened from details page and then opens in a connected state.
+    * It can be opened from details page.
 
         ![open from details page](images/open-from-details-page.png) 
 
-    * It can be opened from Search Commands and then opens in a connected state.
+    * It can be opened from Search Commands.
     
         ![open from search commands](images/open-from-search-commands.png)
+    
+    Once opened and connected, it can be used to run SQL queries from within SAP HANA Cloud Central.
 
-2. An instance that the SQL Console is connected to can be changed in the instance dialog.
+    ```SQL
+    SELECT * FROM M_DATABASE;
+    ```
+
+    ![sample query](images/sample-query.png)
+
+2. A theme can be selected for SAP HANA Cloud Central which includes the SQL Console.  
+
+    Under **Settings** > **Appearance** different light and dark themes are available.  The default theme is SAP Morning Horizon.
+
+    ![Theme selection](images/theme-selection.png)
+
+3. An instance that the SQL Console is connected to can be changed in the instance dialog.
 
     ![Instance selection](images/instance-selection.png)
 
@@ -28,15 +42,17 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
 
     ![connected instance dialog](images/connected-instance-dialog.png)
 
-3. Additional SQL Console tabs can be opened perhaps connecting to different instances or to the same instance but with a different set of credentials.
+4. Additional SQL Console tabs can be opened enabling connections to different instances or to the same instance but with a different set of credentials.
 
     ![open additional SQL Console tabs](images/open-sql-console-tab.png)
 
-4. The contents of a SQL Console can be downloaded or uploaded.  The contents of a SQL Console are not preserved between browser reloads in the current version.
+5. The contents of a SQL Console can be downloaded or uploaded.  
 
     ![download or upload](images/download-and-upload.png)
 
-5. Execute the below SQLScript to create a usergroup, two users, two roles, a schema, a few tables, views, stored procedures, and functions.  **If you are attending SAP TechEd and are using the shared instance, this SQL will already have been executed**.
+    The contents of a SQL Console are not preserved between browser reloads in the current version.
+
+6. Execute the below SQLScript to create a usergroup, two users, two roles with privileges, a schema, a few tables, a view, a function, and a stored procedure.  **If you are attending SAP TechEd and are using the shared DA262 instance, this SQL will already have been executed**.
 
     ```SQL
     CREATE USERGROUP HOTEL_USER_GROUP SET PARAMETER 'minimal_password_length' = '8', 'force_first_password_change' = 'FALSE';
@@ -192,7 +208,7 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
 
     ![create schema](images/create-schema.png)
 
-6. Execute the following SQL statements to add some data to the tables.  **If you are attending SAP TechEd and are using the shared instance, this SQL will already have been executed**.
+7. Execute the following SQL statements to add some data to the tables.  **If you are attending SAP TechEd and are using the shared instance, this SQL will already have been executed**.
 
     ```SQL
     INSERT INTO HOTEL VALUES(10, 'Congress', '155 Beechwood St.', 'Seattle', 'WA', '98121', NEW ST_POINT('POINT(-122.347340 47.610546)', 4326));
@@ -284,7 +300,7 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
     INSERT INTO MAINTENANCE VALUES(12, 26, 'Roof repair due to storm', null, null);
     ```
 
-7. The user can be changed with the connect statement and viewed with the CURRENT_USER function.
+8. The user can be changed with the connect statement and viewed with the CURRENT_USER function.
 
     ```SQL
     CONNECT USER1 PASSWORD Password1;
@@ -299,7 +315,7 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
     
     TODO feature coming soon.  ![](images/todo.png)
 
-8. An example of changing the schema is shown below.  
+9. An example of changing the schema is shown below.  
 
     ```SQL
     SELECT * FROM CUSTOMER;
@@ -312,9 +328,11 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
 
     ![sql execution error](images/sql-execution-error.png)
     
+    The SQL Execution Error dialog enables you to specify what should occur when an error is encountered when running multiple SQL statements.
+    
     ![Set the schemea](images/change-schema.png)
 
-    Notice that when the first SQL statement is executed, the schema is still set to USER1 and the select statement fails as the CUSTOMER table is in the schema HOTEL but that the last SELECT statement succeeds because the schema has been changed to HOTEL.
+    Notice that when the first SQL statement is executed, the schema is still set to USER1 and the select statement fails as the CUSTOMER table is in the schema HOTEL.  The last SELECT statement succeeds because the schema has been changed to HOTEL.
 
     Alternatively, the schema can be set using the schema selection dialog
 
@@ -322,29 +340,32 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
 
     The schemas that the current user has access to are displayed.
 
-9. Examine the **Connection Settings**.  
+10. Examine the **Connection Settings**.  
 
     ![connection settings](images/connection-settings.png)
 
     Execute the following SQL which is used to illustrate the settings.
 
     ```SQL
+    SELECT * FROM M_SYSTEM_INFORMATION_STATEMENTS;
+
     SELECT COUNT(*) FROM SYS.TABLE_COLUMNS;
     SELECT * FROM TABLE_COLUMNS;
-    SELECT * FROM M_SYSTEM_INFORMATION_STATEMENTS;
     ```
 
     Notice that only the first 1024 bytes from the column STATEMENT are displayed in the results view for the Blocked Transactions row.  These limits can be adjusted in the connection settings dialog.
 
     ![limit for large objects](images/settings-result3.png)
 
-    Notice that over 6000 rows are in TABLE_COLUMNS but only the first 1000 are returned.
+    Notice that over 6000 rows are in TABLE_COLUMNS.
 
     ![one thousand row limit](images/settings-result1.png)
 
+     The first 1000 are displayed.
+
     ![one thousand row limit](images/settings-result2.png)
 
-10. Execute the following SQL statement.
+11. Execute the following SQL statement.
 
     ```SQL
     --SELECT AVERAGE_PRICE('single') FROM DUMMY;
@@ -355,14 +376,14 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
 
     ![run with parameters](images/run-with-parameters.png)
 
-11. Execute the following SQL statements.
+12. Execute the following SQL statements.
 
     ```SQL
     SELECT AVERAGE_PRICE('single') FROM DUMMY;
     SELECT * FROM TABLE_COLUMNS;
     ```
 
-    Open the **Messages** tab in the results.  Notice that metrics such as client elapsed time and peak memory consumed are shown.
+    Open the **Messages** tab in the results.  Notice that metrics such as **client elapsed time** and **peak memory consumed** are shown.
 
     ![metrics in the messages tab](images/messages.png)
 
@@ -370,9 +391,9 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
 
     ![history tab](images/history.png)
 
-    These values can be cleared by refreshing the browser.
+    >The contents of the Messages and History tabs can be cleared by refreshing the browser.
 
-12. Execute the following SQL statements.
+13. Execute the following SQL statements.
 
     ```SQL
     SELECT'{ "name":"John", "age":30, "cars": { "car1":"Ford", "car2":"BMW", "car3":"Fiat" }}'
@@ -403,11 +424,11 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
 
     ![JSON viewer](images/json-viewer.png)
 
-13. Statement help can be shown.  Notice that details of the table and function used in the current statement is shown.
+14. Click on the **Statement Help** icon.  Notice that details of the table and function used in the current statement is shown.
 
     ![statement help](images/statement-help.png)
 
-14. A few of the common shortcut keys are listed below.  Try a few of them out.
+15. A few of the common shortcut keys are listed below.  Try a few of them out.
 
     Action | Shortcut
     ------ | ------
@@ -417,14 +438,15 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
     To Lowercase | Ctrl+Shift+U
     Go to Next Error | Alt+E
     Go to Previous Error | Alt+Shift+E
+    Go to Line | Ctrl+L
     Jump to Matching Brackets | Ctrl+P
     Run All | F8
     Run Statement |	F9
     Text Completion | Ctrl+Space 
 
-    >Note: The shortcut keys may vary depending on the browser used.
+    >The shortcut keys may vary depending on the browser used.
 
-15. Execute the followng SQL statement.
+16. Execute the followng SQL statement.
 
     ```SQL
     SELECT * FROM RESERVATION_VIEW;

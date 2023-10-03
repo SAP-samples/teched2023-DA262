@@ -4,15 +4,27 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
 ## Exercise 2.1 Viewing a List of Database Objects
 
-1. Database objects can be viewed in the catalog browser as shown below after selecting the HDI container connection and then **Tables**.
+1. Database objects such as tables, views, functions, and procedures can be viewed in the catalog browser as shown below.  
 
-    ![](images/tables.png)
+    ![](images/Catalog.png)
+
+    Directly above the list of views are search bars for schema and objects. Use the schema and object search  at the bottom left of your screen to search for the **SYS** schema and views that begin with **M_HOST**. 
+    
+    ![](images/SchemaMenu.png)
+    
+    Right-click on the view **M_HOST_INFORMATION** and select **Open Data** to see the data of a view.  
+    
+    ![](images/HostView.png)
+
+    More information on the SAP HANA monitoring views can be found at [Monitoring Views](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/2021_3_QRC/en-US/d3c10d23e8334a35afa8d9bdbc102366.html). 
 
     Alternatively, a table can be found by selecting **Tables** and choosing **Show Tables** from the context menu.
     
     ![](images/TablesInCatalogBrowser.png)
 
-    *Additional filters can be applied in this view by clicking on the column header and the list of columns displayed can specified.*
+    Additional filters can be applied in this view by clicking on the column header.  Click on **Schema Name** and specify **HOTEL**.
+
+    ![](images/schema-filter.png)
 
 ## Exercise 2.2 Viewing a Database Object's SQL
 
@@ -26,17 +38,31 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
 ## Exercise 2.3 Debugging a Stored Procedure
 
-1. A graphical debugger can be used.  Add a breakpoint on line 19.
+1. A graphical debugger can be used.  In the instance connection that uses USER1, open the stored procedure `RESERVATION_GENERATOR` for debuggging.
 
     ![](images/OpenForDebugging.png)
+
+2. The debugger attach options dialog will appear after a few moments. Press **OK**.
+
+    ![](images/debugger-attach-options.png)
+
+3. Set a breakpoint on line 52.
+
+    ![](images/Debugging-add-breakpoint.png)
   
-2. To trigger the breakpoint, call the stored procedure.
+4. To trigger the breakpoint, call the stored procedure.
 
     ![](images/CallStoredProcedure.png)
 
-3. Once the breakpoint has been hit, the variables can be examined, and the code stepped through.
+    ![](images/Debugging-call-with-param.png)
+
+5. Once the breakpoint has been hit, the variables can be examined, and the code stepped through.
 
     ![](images/Debugging.png)
+
+6. When finished debugging, the debugger can be disconnected and the view closed.
+
+    ![](images/stop-debugging.png)
 
 ## Exercise 2.4 Analyzing Stored Procedures
 
@@ -48,11 +74,9 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
     ![](images/AnalyzeSQLScriptCode2.png)
     
-    *Note that the input parameter is not referenced.*
-
 ## Exercise 2.5 Using Object Search
 
-1. Database objects can also be found using **Object Search**.  The search shown below looks for any objects that use FLIGHTRESERVATION in their schema name in the HDI container. 
+1. Database objects can also be found using **Object Search**.  The search shown below looks for any objects that use RESERVATION in their name that are functions, procedures, tables, or views. 
 
     ![](images/ObjectSearch.png)
 
