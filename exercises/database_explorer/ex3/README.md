@@ -1,39 +1,51 @@
 # Exercise 3 - Using the SQL Console
-In this exercise, we will explore some of the functionality in the SAP HANA database explorer's SQL console that is unique to the SQL Console in the SAP HANA database explorer.  Please follow the examples shown below.
+This exercise will explore some of the functionality in the SAP HANA database explorer's SQL console that is unique to the SQL Console in the SAP HANA database explorer.  Please follow the examples shown below.
 
 ## Exercise 3.1 Autocompletion
+The SQL console offers to autocomplete statements.  
 
-1. The SQL console can autocomplete statements.  Enter the statement below into the SQL console, position the cursor on the **C** and press **Ctrl + space**.  Select **COUNTRY** to complete the SQL query.
+1. Enter the statement below into the SQL console, position the cursor on the **C** and press **Ctrl + space**.  Select **CUSTOMER_NAME** to complete the SQL query.
 
     ![](images/AutoComplete.png)
 
     ```SQL
-    SELECT 	NAME, ADDRESS, C, FLDATE, SEAT
-        FROM 
-            PASSENGERS AS P,
-            FLIGHTRESERVATION AS F
-        WHERE P.PASSENGERID = F.PASSENGERID
-        ORDER BY NAME ASC;
+    SELECT HOTEL_NAME, ARRIVAL, FIRSTNAME, C 
+        FROM HOTEL.RESERVATION_VIEW;
     ```
 
 ## Exercise 3.2 Statement Library
+Commonly used statements can be saved to or retrieved from the statement library.  
 
-1. Commonly used statements can be saved to or retrieved from the statement library.  
+1. Execute the following query and then save it to the statement library by pressing the **Add to Statement Library** icon.
+
+    ```SQL
+    SELECT HOTEL_NAME, ARRIVAL, FIRSTNAME, CUSTOMER_NAME 
+        FROM HOTEL.RESERVATION_VIEW 
+        WHERE ARRIVAL > CURRENT_DATE
+        ORDER BY ARRIVAL ASC;
+    ```
 
     ![](images/StatementLibrary.png)
 
-    Statements added to the statement library can viewed and opened by selecting **Show Statement Library**.  
+    A description is optional.
+
+    ![](images/StatementLibraryAdd.png)
+
+2. Statements added to the statement library can viewed and opened by selecting **Show Statement Library**.  
+
+    ![](images/StatementLibraryShow1.png)
+
     
-    ![](images/StatementLibraryShow.png)
+    ![](images/StatementLibraryShow2.png)
 
     In this dialog it is also possible to export selected statements or import statements from a zip file such as the diagnostic SQL statements downloaded from [SAP Note 1969700 - SQL Statement Collection for SAP HANA](https://launchpad.support.sap.com/#/notes/1969700).
 
  ## Exercise 3.3 SQL Console Preferences
 
-1. Examine the SQL console preferences.  Navigate to the database explorer preferences icon on the left of your screen and select **SQL Console**. Examine the available settings.  
+1. Examine the SQL console preferences.  Navigate to the preferences icon on the left of your screen and select **SQL Console**. Examine the available settings.  
 
     A few notable settings are:
-    * Byte limit for the size of a returned value
+    * Byte limit for Large Objects
     * Max number of rows to display
     * Indicate potential SQL errors can be used to enable or disable the syntax parser
     * Auto-save contents of SQL consoles
@@ -43,7 +55,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
     >If changes are made to this screen, the Save button must be pressed for the changes to be set.
 
  
- 2. An example of a query that returns more than 1000 rows is shown below.  The setting Max number of rows to display could be updated to display the full result.
+ 2. Execute the SQL below.
 
     ![](images/Settings.png)       
 
@@ -51,6 +63,9 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
     SELECT count(*) FROM TABLE_COLUMNS;
     SELECT * FROM TABLE_COLUMNS;
     ```
+
+    This query returns more than 6000 rows but only the first 1000 rows are shown.Setting Max number of rows to a higher limit will enable more rows to be displayed.
+
 
 ## Exercise 3.4 SQL Console Shortcut Keys
 
@@ -61,7 +76,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
     ![](images/KeyboardShortcuts.png)
 
     Here is a list of common keyboard shortcuts for future reference:
-    
+
     Action | Shortcut
     ------ | ------
     Add Comment Block | Ctrl+Shift+/
@@ -81,7 +96,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
 ## Exercise 3.5 Additional SQL Console Tab Features 
 
-1. A SQL console tab or a sub tab such as Results, or Messages, can enter or exit full screen mode, by double tapping on its tab.  
+1. A SQL console tab or a sub tab such as Results, or Messages, can enter or exit full screen mode, by double clicking on its tab.  Try double click clicking on the tabs indicated below. 
 
     ![](images/FullScreen.png)
 
@@ -90,8 +105,9 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
     ![](images/SQLConsoleContextMenu.png)
 
 ## Exercise 3.6 Background Execution
+Statements that may take a while to execute can be optionally run in the background.
 
-1. Statements that may take a while to execute can be optionally run in the background.
+1. Execute the below SQL in the background.
 
     ```SQL
     DO BEGIN
@@ -99,7 +115,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
     USING SQLSCRIPT_SYNC AS SYNCLIB;
     CALL SYNCLIB:SLEEP_SECONDS( 5 );  --wait 5 secs
     -- Now execute a query
-    SELECT * FROM PASSENGERS;
+    SELECT * FROM HOTEL.HOTEL;
     END;
     ```
 
@@ -118,16 +134,18 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
     ![](images/ViewBackgroundResults2.png)
 
 ## Exercise 3.7 Run on Multiple Databases
+SQL statements can also be executed against multiple databases.  
 
-1. SQL statements can also be executed against multiple databases.  Paste in the below SQL into the SQL console and from the **Run** icon select **Run on Multiple Databases**. 
+1. Execute the SQL below using the **Run** icon with the option **Run on Multiple Databases**. 
 
     ```SQL
-    SELECT CURRENT_USER FROM DUMMY;
+    SELECT * FROM M_HOST_INFORMATION 
+        WHERE KEY = 'build_qrc_version';
     ```
 
     ![](images/RunOnMultipleDatabases.png)
 
-    Select two or more databases.
+    Select one or more databases.
 
     ![](images/RunOnMultipleDatabases2.png)
 
@@ -135,7 +153,7 @@ In this exercise, we will explore some of the functionality in the SAP HANA data
 
     ![](images/RunOnMultipleDatabases4.png)
 
-    An example of the results file is shown below.
+    An example of the results file is shown below.  If multiple databases were selected, there would be multiple results shown in the JSON file.
 
     ![](images/RunOnMultipleDatabases3.png)
 
