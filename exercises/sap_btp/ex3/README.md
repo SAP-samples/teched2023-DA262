@@ -1,8 +1,8 @@
-# Overview of the SAP Business Technology Platform (SAP BTP)
+# Exercise 3 - Overview of the SAP Business Technology Platform (SAP BTP)
 
 This exercise will provide a brief overview of the SAP BTP and demonstrate how to access the SAP HANA Cloud service.  
 
-1. The SAP BTP offers four functionality areas as shown below.  We will be focusing on SAP HANA Cloud and the SAP Business Application Studio from the data and analytics and app dev areas.
+1. The SAP BTP offers four functionality areas as shown below.  We will be focusing on SAP HANA Cloud from the data and analytics area.
 
     ![SAP Business Technology Platform overview](images/BTP.png)
 
@@ -52,5 +52,5 @@ This exercise will provide a brief overview of the SAP BTP and demonstrate how t
 
 You now have an overview of the SAP BTP and are ready to start using it with the SAP HANA Cloud database.  Further details can be found in the learning journey [Discover SAP Business Technology Platform](https://learning.sap.com/learning-journey/discover-sap-business-technology-platform).
 
-Continue to - [Exercise 1 - Overview of SAP HANA Cloud Central](../../hana_cloud_central/ex1/README.md)
+Continue to - [Exercise 1 - Overview of SAP HANA Cloud Central](../../hana_cloud_central/ex1-overview/README.md)
 

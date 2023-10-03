@@ -1,4 +1,4 @@
-# Register for a Trial SAP BTP Account
+# Exercise 2 - Register for a Trial SAP BTP Account
 If you wish to continue the exercises outside of SAP TechEd and do already have an SAP BTP account to use, you can register for a trial account at https://www.sap.com/cmp/td/sap-hana-cloud-trial.html.  A [free tier](https://developers.sap.com/tutorials/btp-free-tier-account.html) account can also be used but it does require providing a credit card number.  A benefit of using free tier is that the account can be upgraded to a paid service plan without having to re-create the account.
 
 After registering for a trial account using the link above, open your SAP BTP Cockpit and get started by creating a SAP HANA Cloud instances.
@@ -6,7 +6,7 @@ After registering for a trial account using the link above, open your SAP BTP Co
 1. Open the [welcome page](https://account.hanatrial.ondemand.com/trial/#/home/trial) and go to your trial account.
     ![go to your trial account button](images/go-to-trial.png)
 
-2. Enter the subaccount.
+2. Enter the **trial** subaccount.
 
     ![enter the subaccount](images/subaccount.png)
 
@@ -38,9 +38,9 @@ After registering for a trial account using the link above, open your SAP BTP Co
 
     ![assign role collection](images/assign-role-collection.png)
     
-     Add the role collection **SAP HANA Cloud Administrator**.
+     Add the role collections **SAP HANA Cloud Administrator** and **SAP HANA Cloud Security Administrator** .
 
-5.	Under Instances and Subscriptions, open SAP HANA Cloud Central.
+5.	Under **Instances and Subscriptions**, open SAP HANA Cloud Central.
 
     ![open SAP HANA Cloud Central](images/subscription-created.png)
 

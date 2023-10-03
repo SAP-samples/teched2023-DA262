@@ -1,10 +1,10 @@
-# Exercise 1 - Launch the SAP HANA Database Explorer
+# Exercise 1 - Instances in the SAP HANA Database Explorer
 
 The SAP HANA database explorer enables schema browsing and contains a SQL Console with slightly different functionality from SAP HANA Cloud Central.  The SAP HANA database explorer enables importing and exporting data with wizards, debugging SQLScript, working with multi-model data such as graph, spatial and JSON collections,  viewing trace files, and creating remote sources.  It also offers support for data lake Relational Engine and data lake Files connections.  Additional information including [what's new](https://help.sap.com/whats-new/2495b34492334456a49084831c2bea4e?Category=SAP%2520HANA%2520Database%2520Explorer&locale=en-US) can be found by consulting the product documentation from the help icon.
 
 ![](images/Help.png)
 
-In this exercise, we will launch an instance of the SAP HANA database explorer and walk through some of the features relating to HANA database connections.  In later exercises, the Catalog Browser, SQL console, and the database explorer extension will be covered. 
+In this exercise, we will launch an instance of the SAP HANA database explorer and walk through some of the features relating to HANA database connections.  In later exercises, the Catalog Browser and SQL console will be covered. 
 
 ## Exercise 1.1 Open the SAP HANA Database Explorer
 
@@ -17,38 +17,25 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
     >Credentials for a database opened from SAP HANA Cloud Central are managed by SAP HANA Cloud Central.  
     >
     >![](images/Authentication.png)
+    >
+    >![](images/credentials-dialog.png)
     
 ## Exercise 1.2 Examine the Database Instance
 
-1. Hover over your instance to show the context menu. A summary should appear that identifies the type as a cockpit database.
+1. Hover over your instance to show the context menu. A summary should appear that identifies the type as a Cockpit Database.
 
     ![](images/DBSummary.png)
 
-     Right-click on the instance name and select **Show Overview**. The release your instance belongs to can be identified by looking at the version fields.
+     Right-click on the instance name and select **Show Overview**. The release your instance belongs to can be identified by looking at the QRC Version field.
 
     ![](images/ShowOverview.png)
 
     *In this example, the instance is the QRC 3 2023 release.*
 
-## Exercise 1.3 Search For a View Using a Schema Filter
+## Exercise 1.3 Set the Instance's Usage
+Users may benefit from visual clues identifying  production instances. This next step will demonstrate how to label production instances, and how to remove the production label from an instance. 
 
-1. Click the arrow next to the database icon to expand the object hierarchy for the instance. You will see that it holds catalog objects and database diagnostic files (trace files, or log files), and with the appropriate permissions, a list of HDI containers contained in the instance.  Expand **Catalog** then select **Views**.
-
-    ![](images/Catalog.png)
-
-      Directly above the list of views are search bars for schema and objects. Use the schema and object search  at the bottom left of your screen to search for the **SYS** schema and views that begin with **M_HOST**. 
-    
-    ![](images/SchemaMenu.png)
-    
-    Right-click on the view **M_HOST_INFORMATION** and select **Open Data** to see the data of a view.  
-    
-    ![](images/HostView.png)
-
-    More information on the SAP HANA monitoring views can be found at [Monitoring Views](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/2021_3_QRC/en-US/d3c10d23e8334a35afa8d9bdbc102366.html). 
-
-## Exercise 1.4 Set the Instance's Usage
-
-1. Users may benefit from visual clues identifying  production instances. This next step will demonstrate how to label production instances, and how to remove the production label from an instance. To enable this, use the SQL console to run the statements below and refresh your browser.
+1. Use the SQL console to run the statements below and refresh your browser.
    
     >To open the SQL console, right-click on the instance and select **Open SQL Console** or click on the toolbar icon in the top left after selecting an instance.  
 
@@ -63,7 +50,7 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 
     ![](images/ProductionLabel.png)
 
-    >Note: Remember to refresh your browser window once you've run the above statement.
+    >Remember to refresh your browser window once you've run the above statement.
 
     As this instance is not a production instance, we can turn off this setting by executing the below SQL statement.
 
@@ -71,9 +58,10 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
     ALTER SYSTEM ALTER CONFIGURATION ('global.ini', 'DATABASE') SET ('system_information', 'usage') = 'custom' WITH RECONFIGURE;
     ```
 
-## Exercise 1.5 Add the Instance to a Group
+## Exercise 1.4 Add the Instance to a Group
+Instances can be organized by creating groups. 
 
-1. Instances can be organized by creating groups. Use the folder icon  to create a new group and drag and drop the connection into it.
+1. Use the folder icon  to create a new group and drag and drop the connection into it.
 
     ![](images/Groups.png)
 
@@ -81,19 +69,40 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
     
     ![](images/Filter.png)
 
-## Exercise 1.6 Add an Instance with Different Credentials
+## Exercise 1.5 Add an Instance with Different Credentials
 
 1. Add a new instance with a different set of credentials.
 
     ![](images/Add-database-with-a-different-user2.png)
 
-    Provide the user name and password which are USER1 Password1 and update the name of the instance.
+    Provide the user name and password.
+    
+    Name | Value
+    ------ | ------
+    User ID | USER1 |
+    Password | Password1 |
+    
+    Update the **Display Name** to DA262 (USER1). 
 
     ![](images/Add-database-with-a-different-user.png)
 
     After clicking OK, a new instance is added that is using a different set of credentials.
 
     ![](images/Add-database-with-a-different-user3.png)
+
+## Exercise 1.6 Data lake Relational Engine and data lake Files Connections
+ 
+Additional instance connection types can be added using the **Add Instance Dialog** as shown below.
+
+![](images/add-instance-dialog.png)
+
+A data lake Relational Engine connection enables the database explorer to connect to an instance that is disk based and can store and query large amounts of structured data.
+
+A data lake Files connection enables the browsing and management of semi and unstructured files as shown below.
+
+![](images/data-lake-file-container.png)
+
+Additional details can be found in the tutorial [Add Databases to the SAP HANA Database Explorer](https://developers.sap.com/tutorials/hana-dbx-connections.html).
 
 This concludes the exercise on launching and exploring instances in the SAP HANA database explorer.
 

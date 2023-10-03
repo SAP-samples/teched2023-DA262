@@ -4,15 +4,27 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
 ## Exercise 2.1 Viewing a List of Database Objects
 
-1. Database objects such as tables, views, functions, and procedures can be viewed in the catalog browser as shown below.
+1. Database objects such as tables, views, functions, and procedures can be viewed in the catalog browser as shown below.  
 
-    ![](images/tables.png)
+    ![](images/Catalog.png)
+
+    Directly above the list of views are search bars for schema and objects. Use the schema and object search  at the bottom left of your screen to search for the **SYS** schema and views that begin with **M_HOST**. 
+    
+    ![](images/SchemaMenu.png)
+    
+    Right-click on the view **M_HOST_INFORMATION** and select **Open Data** to see the data of a view.  
+    
+    ![](images/HostView.png)
+
+    More information on the SAP HANA monitoring views can be found at [Monitoring Views](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/2021_3_QRC/en-US/d3c10d23e8334a35afa8d9bdbc102366.html). 
 
     Alternatively, a table can be found by selecting **Tables** and choosing **Show Tables** from the context menu.
     
     ![](images/TablesInCatalogBrowser.png)
 
-    *Additional filters can be applied in this view by clicking on the column header and the list of columns displayed can specified.*
+    Additional filters can be applied in this view by clicking on the column header.  Click on **Schema Name** and specify **HOTEL**.
+
+    ![](images/schema-filter.png)
 
 ## Exercise 2.2 Viewing a Database Object's SQL
 
