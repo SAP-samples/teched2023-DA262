@@ -1,4 +1,4 @@
-# Exercise X - SQL Console
+# Exercise 7 - SQL Console
 
 This exercise will demonstrate the functionality in the SQL Console that is included in SAP HANA Cloud Central.  The same SQL Console component is also available in the [SAP HANA database explorer](https://marketplace.visualstudio.com/items?itemName=SAPSE.hana-database-explorer) extension for Visual Studio Code and the SAP Business Application Studio.   
 

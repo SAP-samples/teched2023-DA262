@@ -29,11 +29,11 @@ Choose a method to access the SAP BTP by following Exercise 1 or Exercise 2 belo
 
 SAP HANA Cloud Central provides database administrators (DBAs) with a unified tool to administer and monitor SAP HANA Cloud databases and SAP HANA Cloud data lake instances.
 
-- [Exercise 1 - Overview of SAP HANA Cloud Central](exercises/hana_cloud_central/ex1/)
-- [Exercise 2 - Create Instances](exercises/hana_cloud_central/ex2/)
-- [Exercise 3 - Edit Instances](exercises/hana_cloud_central/ex3/)
-- [Exercise 4 - Start, Stop, Upgrade Instances, and Other Actions](exercises/hana_cloud_central/ex4/)
-- [Exercise X - SQL Console](exercises/hana_cloud_central/SQLConsole)
+- [Exercise 1 - Overview of SAP HANA Cloud Central](exercises/hana_cloud_central/ex1-overview/)
+- [Exercise 2 - Create, Edit, Start, and Stop Instances](exercises/hana_cloud_central/ex2-Instance/)
+- [Exercise 3 - ?](exercises/hana_cloud_central/ex3-OtherActions/)
+- [Exercise 4 - Refresh and Auto-Refresh](exercises/hana_cloud_central/ex4-refresh/)
+- [Exercise 7 - SQL Console](exercises/hana_cloud_central/ex7-SQLConsole)
 
 ## SAP HANA Database Explorer - 20 minutes
 The SAP HANA database explorer is a web-based tool for browsing and working with  database schema objects such as tables, views, and stored procedures and executing SQL.

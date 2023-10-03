@@ -8,11 +8,11 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
     ![](images/Catalog.png)
 
-    Directly above the list of views are search bars for schema and objects. Use the schema and object search  at the bottom left of your screen to search for the **SYS** schema and views that begin with **M_HOST**. 
+    Directly above the list of views are filters for schema name and object name. Use the schema and object filters to search for the view **M_HOST_INFORMATION**. 
     
     ![](images/SchemaMenu.png)
     
-    Right-click on the view **M_HOST_INFORMATION** and select **Open Data** to see the data of a view.  
+    Right-click on the view **M_HOST_INFORMATION** and select **Open Data** to see the data of this view.  
     
     ![](images/HostView.png)
 
@@ -28,7 +28,7 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
 ## Exercise 2.2 Viewing a Database Object's SQL
 
-1. A create, select, or insert statement can be generated as shown below.
+1. A create, select, or insert statement can be generated as shown below for a table.
 
     ![](images/GenerateInsert.png)
 
@@ -37,12 +37,13 @@ In this exercise, we will explore some of the functionality that the catalog bro
     ![](images/StoredProcedureSource.png)
 
 ## Exercise 2.3 Debugging a Stored Procedure
+A graphical debugger can be used to step through the code in a stored procedure, function, or anonymous block.  
 
-1. A graphical debugger can be used.  In the instance connection that uses USER1, open the stored procedure `RESERVATION_GENERATOR` for debuggging.
+1. In the instance connection that uses USER1, open the stored procedure `RESERVATION_GENERATOR` for debuggging.
 
     ![](images/OpenForDebugging.png)
 
-2. The debugger attach options dialog will appear after a few moments. Press **OK**.
+2. The Debugger Attach Options dialog will appear after a few moments. Press **OK**.
 
     ![](images/debugger-attach-options.png)
 
@@ -50,13 +51,15 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
     ![](images/Debugging-add-breakpoint.png)
   
-4. To trigger the breakpoint, call the stored procedure.
+4. To trigger the breakpoint, call the stored procedure using **Generate CALL Statement with UI**.
 
     ![](images/CallStoredProcedure.png)
 
+    Provide a value such as 2 for the input parameter and execute the procedure using the input parameter.
+    
     ![](images/Debugging-call-with-param.png)
 
-5. Once the breakpoint has been hit, the variables can be examined, and the code stepped through.
+5. Once the breakpoint has been hit, the variables can be examined, and the code can be stepped through.
 
     ![](images/Debugging.png)
 
@@ -65,18 +68,20 @@ In this exercise, we will explore some of the functionality that the catalog bro
     ![](images/stop-debugging.png)
 
 ## Exercise 2.4 Analyzing Stored Procedures
+The source code for a specific stored procedure, for all stored procedures in a schema, or for all stored procedures in a database can also be analyzed.  This can provide suggestions for code quality, security, or performance.
 
-1. The source code for a specific stored procedure, for all stored procedures in a schema, or for all stored procedures in a database can also be analyzed.  This can provide suggestions for code quality, security, or performance.
+1. Select the schema `HOTEL` and choose **Analyze SQLScript Code** from the context menu.
 
     ![](images/AnalyzeSQLScriptCode.png)
 
-    To view more details, double click on a row.
+    To view more details of a found issue, double click on a row which will show the source code of the object with a marker.
 
     ![](images/AnalyzeSQLScriptCode2.png)
     
 ## Exercise 2.5 Using Object Search
+Database objects can also be found using **Object Search**.  
 
-1. Database objects can also be found using **Object Search**.  The search shown below looks for any objects that use RESERVATION in their name that are functions, procedures, tables, or views. 
+1. Perform a search for any objects that use RESERVATION in their name that are functions, procedures, tables, or views. 
 
     ![](images/ObjectSearch.png)
 
@@ -88,7 +93,7 @@ In this exercise, we will explore some of the functionality that the catalog bro
 
 ## Exercise 2.6 Database Diagnostic Files
 
-1. Database diagnostic files can also be viewed or downloaded. 
+1. Database diagnostic files can also be viewed or downloaded as shown below.
 
     ![](images/DiagnosticFiles.png)
 
