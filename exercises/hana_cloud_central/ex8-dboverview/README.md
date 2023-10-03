@@ -1,6 +1,6 @@
 # Exercise 8: The Databsed Overview Page
 
-The SAP HANA Cloud Central can be used to administer data lake, but this exercise will focus on SAP HANA database. With the SAP HANA CLoud Central, you can monitor resource utilization (memory, CPU and disk), alerts, table usage, database services, SAP HANA native storage extensions (NSE), and database performance metrics (threads, sessions, SQL statements, workload classes and connections). You can also view backups, manage configuration parameters, manage table distribution, administer smart data access (SDA) and administer smart data integration (SDI). Finally, you can perform security tasks such as user and role management, data encryption, auditing, data anonymization and trust configuration.
+The SAP HANA Cloud Central can be used to administer data lake, but this exercise will focus on SAP HANA database. With the SAP HANA Cloud Central, you can monitor resource utilization (memory, CPU and disk), alerts, table usage, database services, SAP HANA native storage extensions (NSE), and database performance metrics (threads, sessions, SQL statements, workload classes and connections). You can also view backups, manage configuration parameters, manage table distribution, administer smart data access (SDA) and administer smart data integration (SDI). Finally, you can perform security tasks such as user and role management, data encryption, auditing, data anonymization and trust configuration.
 
 Through the Database Overview page, you can view key health indicators for this specific database, such as database status and resource utilization. You also have access to tools that allow you to perform database administrations tasks, such as performance analysis and executing SQL statements. Different parts of a single card can link to different views or applications. This way, you can see various components in a single view and make the decision whether to further examine issues by drilling down.
 
@@ -35,4 +35,4 @@ This exercise will teach you the basics of navigating the Database Overview page
     Down further, you see security settings, such as User & Authorization Management. There are also a number of hyperlinks to launch additional administration applications.
 
 #
-Continue to - [Exercise 9: Monitoring Memory Usage](../ex9/README.md)
+Continue to - [Exercise 9: Monitoring Memory Usage](../ex9-Memory/README.md)
