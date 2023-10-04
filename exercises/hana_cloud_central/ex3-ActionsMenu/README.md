@@ -80,4 +80,4 @@ Now let us talk about the other Actions available for each of the instances.
    * **Copy Configuration:** Click on Copy Configuration. A popup opens with options to copy configuration to clipboard or download it as a JSON file. Depending on how often you will use your instance configuration, either copy or save the JSON-compliant string.
     ![Copy](images/19.png)
 
-Continue to - [Exercise 4 - Refresh and Auto-Refresh](../ex4-Refresh/README.md)
+Continue to - [Exercise 4 - Refresh and Auto-Refresh](../ex4-refresh/README.md)

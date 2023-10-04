@@ -64,7 +64,7 @@ Commonly used statements can be saved to or retrieved from the statement library
     SELECT * FROM TABLE_COLUMNS;
     ```
 
-    This query returns more than 6000 rows but only the first 1000 rows are shown.Setting Max number of rows to a higher limit will enable more rows to be displayed.
+    This query returns more than 6000 rows but only the first 1000 rows are shown.  Setting Max number of rows to a higher limit will enable more rows to be displayed.
 
 
 ## Exercise 3.4 SQL Console Shortcut Keys
@@ -95,12 +95,13 @@ Commonly used statements can be saved to or retrieved from the statement library
     >The shortcut keys may vary depending on the browser used.
 
 ## Exercise 3.5 Additional SQL Console Tab Features 
+A SQL console tab or a sub tab such as Results, or Messages, can enter or exit full screen mode, by double clicking on its tab.  
 
-1. A SQL console tab or a sub tab such as Results, or Messages, can enter or exit full screen mode, by double clicking on its tab.  Try double click clicking on the tabs indicated below. 
+1. Double click on the tabs indicated below. 
 
     ![](images/FullScreen.png)
 
-2. A context menu is available on SQL console tabs.  You may wish to provide a more descriptive tab name for a SQL console.
+2. A context menu is available on SQL console tabs.  Rename the tab indicated below to a more descriptive tab name.
 
     ![](images/SQLConsoleContextMenu.png)
 
@@ -166,14 +167,22 @@ SQL statements can also be executed against multiple databases.
     Further details on how to configure the SAP HANA database explorer to be used with cloud storage providers can be found at [Export and Import Data and Schema with SAP HANA Database Explorer](https://developers.sap.com/tutorials/hana-dbx-export-import.html).
 
 ## Exercise 3.9 Data Viewers
+An additional data viewer supported by the SQL Console in the SAP HANA database explorer is a spatial viewer.  
 
-1. An additional data viewer supported by the SQL Console in the SAP HANA database explorer is a spatial viewer.  Execute the below SQL, select a value from the results tab and choose **View data**. 
+1. Execute the below SQL.
 
     ```SQL
-    SELECT NEW ST_Point('POINT (-80.55100416451384 43.48025646678657)', 4326) FROM DUMMY;
+    SELECT NAME, ADDRESS, CITY, STATE, LOCATION 
+        FROM HOTEL.HOTEL;
     ```
 
+2. Select one or more location values and choose  **View spatial data**. 
+
     ![](images/view-map.png)
+
+    A marker is shown for each location and includes details from the table.
+
+    ![](images/view-map2.png)
     
     Further details on how the SAP HANA database explorer can be used with multi-model features including graph, JSON, and spatial can be found at [Try Out Multi-Model Functionality with the SAP HANA Database Explorer](https://developers.sap.com/tutorials/hana-dbx-multi-model.html).
 

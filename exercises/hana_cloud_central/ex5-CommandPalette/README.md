@@ -19,4 +19,4 @@ In this exercise, you will learn how to use the Command Palette.
     <kbd>
     ![](./images/3.png)
     </kbd>
-Continue to - [Exercise 6: Alerts](../ex6-Alerts/README.md)
+Continue to - [Exercise 6: Alerts](../ex6-alerts/README.md)

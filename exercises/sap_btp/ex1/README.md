@@ -1,6 +1,6 @@
 # Exercise 1 - Access the SAP BTP Shared Subaccount for DA262
 
-This exercise will provide instructions on how to access the shared subaccount provided for attendes of this SAP TechEd hands-on workshop.  
+This exercise will provide instructions on how to access the shared subaccount provided for attendees of this SAP TechEd hands-on workshop.  
 
 1. Open the [SAP BTP Cockpit](https://cockpit.btp.cloud.sap/).
 

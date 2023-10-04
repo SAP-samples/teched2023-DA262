@@ -12,7 +12,7 @@ This session introduces attendees to the end-to-end picture of operations requir
 
 ## Requirements
 
-To complete this workshop, you need access to an SAP Business Technology Platform (SAP BTP) account and the SAP HANA Cloud service. You can use an account provided for this session or a trial, free tier, or productive version of SAP SAP BTP.  
+To complete this workshop, you need access to an SAP Business Technology Platform (SAP BTP) account and the SAP HANA Cloud service. You can use an account provided for this session or a trial, free tier, or productive version of SAP BTP.  
 
 ## SAP Business Technology Platform (SAP BTP) - 5 minutes
 The SAP BTP brings together data and analytics, artificial intelligence, application development, automation, and integration in one, unified environment.
@@ -36,7 +36,7 @@ SAP HANA Cloud Central provides database administrators (DBAs) with a unified to
 - [Exercise 5 - Command Palette](exercises/hana_cloud_central/ex5-CommandPalette/)
 - [Exercise 6 - Alerts](exercises/hana_cloud_central/ex6-alerts/)
 - [Exercise 7 - SQL Console](exercises/hana_cloud_central/ex7-SQLConsole)
-- [Exercise 8 - The Databsed Overview Page](exercises/hana_cloud_central/ex8-dboverview/)
+- [Exercise 8 - The Database Overview Page](exercises/hana_cloud_central/ex8-dboverview/)
 - [Exercise 9 - Monitoring Memory Usage](exercises/hana_cloud_central/ex9-Memory/)
 
 
@@ -47,27 +47,6 @@ The SAP HANA database explorer is a web-based tool for browsing and working with
 - [Exercise 2 - Catalog Browser and Object Search](exercises/database_explorer/ex2/)
 - [Exercise 3 - Using the SQL Console](exercises/database_explorer/ex3/)
 
-## Exercises
-
-Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
-
-- [Getting Started](exercises/ex0/)
-- [Exercise 1 - First Exercise Description](exercises/ex1/)
-    - [Exercise 1.1 - Exercise 1 Sub Exercise 1 Description](exercises/ex1#exercise-11-sub-exercise-1-description)
-    - [Exercise 1.2 - Exercise 1 Sub Exercise 2 Description](exercises/ex1#exercise-12-sub-exercise-2-description)
-- [Exercise 2 - Second Exercise Description](exercises/ex2/)
-    - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
-    - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
-
-  
-**OR** Link to the Tutorial Navigator for example...
-
-Start the exercises [here](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html).
-
-**IMPORTANT**
-
-Your repo must contain the .reuse and LICENSES folder and the License section below. DO NOT REMOVE the section or folders/files. Also, remove all unused template assets(images, folders, etc) from the exercises folder. 
-
 ## Contributing
 Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) to understand the contribution guidelines.
 
@@ -75,7 +54,6 @@ Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) to understand the contribut
 Please read the [SAP Open Source Code of Conduct](https://github.com/SAP-samples/.github/blob/main/CODE_OF_CONDUCT.md).
 
 ## How to obtain support
-
 Support for the content in this repository is available during the actual time of the online session for which this content has been designed. Otherwise, you may request support via the [Issues](../../issues) tab.
 
 ## License

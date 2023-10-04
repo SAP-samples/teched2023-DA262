@@ -12,11 +12,13 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 
     ![](images/OpenSQLConsole.png)
 
-    You may be prompted to enter database login credentials at this point. Enter **DBADMIN** for the user and the password that was provided in the workshop or specified in the SAP HANA instance creation wizard.
+2. You may be prompted to enter database login credentials at this point. Enter **DBADMIN** for the user and the password that was provided in the workshop or specified in the SAP HANA instance creation wizard.
 
     >Credentials for a database opened from SAP HANA Cloud Central are managed by SAP HANA Cloud Central.  
     >
     >![](images/Authentication.png)
+    >
+    > The credentials to use can be specified here or removed.
     >
     >![](images/credentials-dialog.png)
     
@@ -26,7 +28,7 @@ In this exercise, we will launch an instance of the SAP HANA database explorer a
 
     ![](images/DBSummary.png)
 
-     Right-click on the instance name and select **Show Overview**. The release your instance belongs to can be identified by looking at the QRC Version field.
+2. Right-click on the instance name and select **Show Overview**. The release your instance belongs to can be identified by looking at the QRC Version field.
 
     ![](images/ShowOverview.png)
 
@@ -52,7 +54,7 @@ Users may benefit from visual clues identifying  production instances. This next
 
     >Remember to refresh your browser window once you've run the above statement.
 
-    As this instance is not a production instance, we can turn off this setting by executing the below SQL statement.
+2. As this instance is not a production instance, we can turn off this setting by executing the below SQL statement.
 
     ```SQL
     ALTER SYSTEM ALTER CONFIGURATION ('global.ini', 'DATABASE') SET ('system_information', 'usage') = 'custom' WITH RECONFIGURE;
@@ -65,7 +67,7 @@ Instances can be organized by creating groups.
 
     ![](images/Groups.png)
 
-    An instance can be quickly found using the filter as shown below.
+2. An instance can be quickly found using the filter as shown below.
     
     ![](images/Filter.png)
 
@@ -90,7 +92,7 @@ Instances can be organized by creating groups.
 
     ![](images/Add-database-with-a-different-user3.png)
 
-## Exercise 1.6 Data lake Relational Engine and data lake Files Connections
+## Exercise 1.6 Data Lake Relational Engine and Data Lake Files Connections
  
 Additional instance connection types can be added using the **Add Instance Dialog** as shown below.
 

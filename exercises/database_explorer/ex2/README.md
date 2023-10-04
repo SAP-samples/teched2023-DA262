@@ -3,26 +3,27 @@
 In this exercise, we will explore some of the functionality that the catalog browser and object search provide when working with database objects.
 
 ## Exercise 2.1 Viewing a List of Database Objects
+Database objects such as tables, views, functions, and procedures can be viewed in the catalog browser.
 
-1. Database objects such as tables, views, functions, and procedures can be viewed in the catalog browser as shown below.  
+1. Expand the **Catalog** and select **Views**.  
 
     ![](images/Catalog.png)
 
-    Directly above the list of views are filters for schema name and object name. Use the schema and object filters to search for the view **M_HOST_INFORMATION**. 
+2. Directly above the list of views are filters for schema name and object name. Use the schema and object filters to search for the view **M_HOST_INFORMATION**. 
     
     ![](images/SchemaMenu.png)
     
-    Right-click on the view **M_HOST_INFORMATION** and select **Open Data** to see the data of this view.  
+3. Right-click on the view **M_HOST_INFORMATION** and select **Open Data** to see the data of this view.  
     
     ![](images/HostView.png)
 
     More information on the SAP HANA monitoring views can be found at [Monitoring Views](https://help.sap.com/viewer/c1d3f60099654ecfb3fe36ac93c121bb/2021_3_QRC/en-US/d3c10d23e8334a35afa8d9bdbc102366.html). 
 
-    Alternatively, a table can be found by selecting **Tables** and choosing **Show Tables** from the context menu.
+4. A table can be found by selecting **Tables** and choosing **Show Tables** from the context menu.
     
     ![](images/TablesInCatalogBrowser.png)
 
-    Additional filters can be applied in this view by clicking on the column header.  Click on **Schema Name** and specify **HOTEL**.
+5. Additional filters can be applied in this view by clicking on the column header.  Click on **Schema Name** and specify **HOTEL**.
 
     ![](images/schema-filter.png)
 
@@ -39,7 +40,7 @@ In this exercise, we will explore some of the functionality that the catalog bro
 ## Exercise 2.3 Debugging a Stored Procedure
 A graphical debugger can be used to step through the code in a stored procedure, function, or anonymous block.  
 
-1. In the instance connection that uses USER1, open the stored procedure `RESERVATION_GENERATOR` for debuggging.
+1. In the instance connection that uses USER1, open the stored procedure `RESERVATION_GENERATOR` for debugging.
 
     ![](images/OpenForDebugging.png)
 
@@ -63,7 +64,7 @@ A graphical debugger can be used to step through the code in a stored procedure,
 
     ![](images/Debugging.png)
 
-6. When finished debugging, the debugger can be disconnected and the view closed.
+6. When finished debugging, the debugger can be disconnected, and the view closed.
 
     ![](images/stop-debugging.png)
 

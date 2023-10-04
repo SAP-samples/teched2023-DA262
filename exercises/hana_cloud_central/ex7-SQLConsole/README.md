@@ -2,6 +2,8 @@
 
 This exercise will demonstrate the functionality in the SQL Console that is included in SAP HANA Cloud Central.  The same SQL Console component is also available in the [SAP HANA database explorer](https://marketplace.visualstudio.com/items?itemName=SAPSE.hana-database-explorer) extension for Visual Studio Code and the SAP Business Application Studio.   
 
+## Exercise 7.1 Open the SQL Console
+
 1. The SQL Console can be opened in multiple ways as shown below.  Explore the various ways the SQL Console can be opened.
 
     * It can be opened from the apps sidebar.
@@ -20,7 +22,7 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
     
         ![open from search commands](images/open-from-search-commands.png)
     
-    Once opened and connected, it can be used to run SQL queries from within SAP HANA Cloud Central.
+2. Once opened and connected, it can be used to run SQL queries from within SAP HANA Cloud Central.
 
     ```SQL
     SELECT * FROM M_DATABASE;
@@ -28,31 +30,37 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
 
     ![sample query](images/sample-query.png)
 
-2. A theme can be selected for SAP HANA Cloud Central which includes the SQL Console.  
+## Exercise 7.2 Themes
+A theme can be selected for SAP HANA Cloud Central which includes the SQL Console.  
 
-    Under **Settings** > **Appearance** different light and dark themes are available.  The default theme is SAP Morning Horizon.
+1. Navigate to **Settings** > **Appearance** and try out a few of the theme options.  The default theme is SAP Morning Horizon.
 
     ![Theme selection](images/theme-selection.png)
 
-3. An instance that the SQL Console is connected to can be changed in the instance dialog.
+## Exercise 7.3 Connect Instance Dialog
+
+1. An instance that the SQL Console is connected to can be changed in the instance dialog.
 
     ![Instance selection](images/instance-selection.png)
 
-    There is a filter for SAP HANA database and data lake Relational Engine instances and a search bar.  Previously specified connections can be reused so the user name and password for the database does not need to be re-entered.
+2. There is a filter for SAP HANA database and data lake Relational Engine instances and a search bar.  Previously specified connections can be reused so the user name and password for the database does not need to be re-entered.
 
     ![connected instance dialog](images/connected-instance-dialog.png)
 
-4. Additional SQL Console tabs can be opened enabling connections to different instances or to the same instance but with a different set of credentials.
+## Exercise 7.4 Multiple SQL Tabs
+1. Additional SQL Console tabs can be opened enabling connections to different instances or to the same instance but with a different set of credentials.
 
     ![open additional SQL Console tabs](images/open-sql-console-tab.png)
 
-5. The contents of a SQL Console can be downloaded or uploaded.  
+## Exercise 7.5 Download or Import SQL
+1. The contents of a SQL Console can be downloaded or imported.  
 
     ![download or upload](images/download-and-upload.png)
 
     The contents of a SQL Console are not preserved between browser reloads in the current version.
 
-6. Execute the below SQLScript to create a usergroup, two users, two roles with privileges, a schema, a few tables, a view, a function, and a stored procedure.  **If you are attending SAP TechEd and are using the shared DA262 instance, this SQL will already have been executed**.
+## Exercise 7.6 Create Database Objects
+1. Execute the below SQLScript to create a usergroup, two users, two roles with privileges, a schema, a few tables, a view, a function, and a stored procedure.  **If you are attending SAP TechEd and are using the shared DA262 instance, this SQL will already have been executed**.
 
     ```SQL
     CREATE USERGROUP HOTEL_USER_GROUP SET PARAMETER 'minimal_password_length' = '8', 'force_first_password_change' = 'FALSE';
@@ -208,7 +216,8 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
 
     ![create schema](images/create-schema.png)
 
-7. Execute the following SQL statements to add some data to the tables.  **If you are attending SAP TechEd and are using the shared instance, this SQL will already have been executed**.
+## Exercise 7.7 Populate Database Objects
+1. Execute the following SQL statements to add some data to the tables.  **If you are attending SAP TechEd and are using the shared instance, this SQL will already have been executed**.
 
     ```SQL
     INSERT INTO HOTEL VALUES(10, 'Congress', '155 Beechwood St.', 'Seattle', 'WA', '98121', NEW ST_POINT('POINT(-122.347340 47.610546)', 4326));
@@ -300,7 +309,8 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
     INSERT INTO MAINTENANCE VALUES(12, 26, 'Roof repair due to storm', null, null);
     ```
 
-8. The user can be changed with the connect statement and viewed with the CURRENT_USER function.
+## Exercise 7.8 Change User
+1. The user can be changed with the connect statement and viewed with the CURRENT_USER function.
 
     ```SQL
     CONNECT USER1 PASSWORD Password1;
@@ -315,7 +325,8 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
     
     TODO feature coming soon.  ![](images/todo.png)
 
-9. An example of changing the schema is shown below.  
+## Exercise 7.8 Change Schema
+1. An example of changing the schema is shown below.  
 
     ```SQL
     SELECT * FROM CUSTOMER;
@@ -334,13 +345,14 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
 
     Notice that when the first SQL statement is executed, the schema is still set to USER1 and the select statement fails as the CUSTOMER table is in the schema HOTEL.  The last SELECT statement succeeds because the schema has been changed to HOTEL.
 
-    Alternatively, the schema can be set using the schema selection dialog
+    Alternatively, the schema can be set using the schema selection dialog.
 
     ![schema selection dialog](images/change-schema2.png)
 
     The schemas that the current user has access to are displayed.
 
-10. Examine the **Connection Settings**.  
+## Exercise 7.10 Connection Settings
+1. Examine the **Connection Settings**.  
 
     ![connection settings](images/connection-settings.png)
 
@@ -365,7 +377,8 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
 
     ![one thousand row limit](images/settings-result2.png)
 
-11. Execute the following SQL statement.
+## Exercise 7.11 Specifying Input Parameters
+1. Execute the following SQL statement.
 
     ```SQL
     --SELECT AVERAGE_PRICE('single') FROM DUMMY;
@@ -376,7 +389,8 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
 
     ![run with parameters](images/run-with-parameters.png)
 
-12. Execute the following SQL statements.
+## Exercise 7.12 Messages and History Tabs
+1. Execute the following SQL statements.
 
     ```SQL
     SELECT AVERAGE_PRICE('single') FROM DUMMY;
@@ -393,7 +407,8 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
 
     >The contents of the Messages and History tabs can be cleared by refreshing the browser.
 
-13. Execute the following SQL statements.
+## Exercise 7.13 Result Viewers
+1. Execute the following SQL statements.
 
     ```SQL
     SELECT'{ "name":"John", "age":30, "cars": { "car1":"Ford", "car2":"BMW", "car3":"Fiat" }}'
@@ -424,11 +439,13 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
 
     ![JSON viewer](images/json-viewer.png)
 
-14. Click on the **Statement Help** icon.  Notice that details of the table and function used in the current statement is shown.
+## Exercise 7.14 Statement Help
+1. Click on the **Statement Help** icon.  Notice that details of the table and function used in the current statement is shown.
 
     ![statement help](images/statement-help.png)
 
-15. A few of the common shortcut keys are listed below.  Try a few of them out.
+## Exercise 7.15 Shortcut Keys
+1. A few of the common shortcut keys are listed below.  Try a few of them out.
 
     Action | Shortcut
     ------ | ------
@@ -446,7 +463,8 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
 
     >The shortcut keys may vary depending on the browser used.
 
-16. Execute the followng SQL statement.
+## Exercise 7.16 Download or Copy Results
+1. Execute the followng SQL statement.
 
     ```SQL
     SELECT * FROM RESERVATION_VIEW;
@@ -469,4 +487,5 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
 You now have an overview of the features of the SQL Console in SAP HANA Cloud Central.  Further details can be found in the tutorial learning journey [Query Databases Using the SQL Console in SAP HANA Cloud Central](https://developers.sap.com/tutorials/hana-dbx-hcc.html).
 
 Continue to - [Exercise 1 - Overview of the SAP HANA database explorer](../../database_explorer/ex1/README.md)
+Continue to - [Exercise 8 - The Database Overview Page](../ex8-dboverview/README.md)
 

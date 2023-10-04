@@ -1,4 +1,4 @@
-# Exercise 2 - Exercise 2 Description
+# Exercise 6 - Alerts Description
 
 In this exercise, we will create...
 
@@ -39,4 +39,4 @@ READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
 
 You've now ...
 
-Continue to - [Exercise 3 - Excercise 3 ](../ex3/README.md)
+Continue to - [Exercise 7 - SQL Console](../ex7-SQLConsole/README.md)
