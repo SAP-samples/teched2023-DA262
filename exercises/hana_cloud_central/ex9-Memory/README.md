@@ -23,4 +23,4 @@ SAP HANA administrators must carefully monitor system computing resources to ens
     ![](./images/4.png)
     </kbd>
 
-Continue to - [Exercise 1 - Exercise 1 Description](../ex1/README.md)
+Continue to - [Exercise 10 - Security Basics](../ex10-SecurityBasics/README.md)

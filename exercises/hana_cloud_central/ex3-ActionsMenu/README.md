@@ -4,7 +4,7 @@
 
 In this exercise, we will discuss the *Manage Configuration* functionality across all the instance types. An existing instance can be modified after creation as per requirement through the *Manage Configuration* functionality. Let's edit the **DEMO_HANA_DB** (or **DA262** if you are using the SAP BTP Shared Subaccount) instance.
 
- 1. Click on the '...' icon (under the Actions menu in the instances list) to see the operations that can be performed on the DEMO_HANA_DB ( or DA262) database. Click on Manage Configuration.
+ 1. Click on the '...' icon (under the Actions menu in the instances list) to see the operations that can be performed on the DEMO_HANA_DB (or DA262) database. Click on Manage Configuration.
 
     ![Click on Manage Configuration](images/1.png)
 
