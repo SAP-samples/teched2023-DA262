@@ -24,7 +24,13 @@ In this exercise, you'll create a new user, a new role and a new user group.
     ![Show User Groups](./images/4.png)
     </kbd>
 
-2. Now we are in the *Create User Group* page. Enter TECHNICAL_USER_GROUP in the Name text field. Leave the rest of the options in their default settings. Click **Save**. Then you can see the basic information about this newly created user group.
+2. Now we are in the *Create User Group* page. Enter TECHNICAL_USER_GROUP in the Name text field. 
+   
+    > **Note**
+    If you are using the SAP BTP Shared Subaccount for DA262, you can put the name as *Your First Name + Some Random Number + _Group*. i.e. SYLVIA123_Group
+
+
+   Leave the rest of the options in their default settings. Click **Save**. Then you can see the basic information about this newly created user group.
    <kbd>
     ![Create User Groups](./images/5.png)
     </kbd>
@@ -64,7 +70,7 @@ In this exercise, you'll create a new user, a new role and a new user group.
 
 8. You are now in the User Management app and can provide the details for the new user. Notice the user group field is pre-populated and that's because we navigated here from the User Group Management app. Create a new user with the following attributes:
 
-    * User name: TECHNICAL_USER
+    * User name: TECHNICAL_USER or *Your First Name + Some random number* 
     * Select the password authentication mechanism check box
     * Password: Abcd1234
     * Password confirmation: Abcd1234
@@ -75,13 +81,13 @@ In this exercise, you'll create a new user, a new role and a new user group.
     ![](./images/12.png)
     </kbd>
 
-9. On the drop-down menu from the SAP HANA Cloud Central's toolbar (top left), click on **User Management** and select **Role Management** from the menu to navigate to that app.
+9.  On the drop-down menu from the SAP HANA Cloud Central's toolbar (top left), click on **User Management** and select **Role Management** from the menu to navigate to that app.
     <kbd>
     ![Drop-down menu](./images/13.png)
     </kbd>
 
 10. You are now in the **Role Management** app. Click the **Create Role** and create a new role with the following attributes:
-    * Role: TECHNICAL_USER_ROLE
+    * Role: TECHNICAL_USER_ROLE or *Your First Name + Random Number_ROLE*
     <kbd>
     ![Create Role](./images/14.png)
     </kbd>
@@ -124,7 +130,7 @@ In this exercise, you'll create a new user, a new role and a new user group.
     <kbd>
     ![Assign Users](./images/22.png)
     </kbd>
-19. Click the **Assign User** button and search for the *TECHNICAL_USER*. Select it and Click the **Select** button to dismiss the dialog
+19. Click the **Assign User** button and search for the user you just created i.e.*TECHNICAL_USER*. Select it and Click the **Select** button to dismiss the dialog
     <kbd>
     ![Assign Users](./images/23.png)
     </kbd>
@@ -160,4 +166,6 @@ In this exercise, you'll create a new user, a new role and a new user group.
      <kbd>
     ![](./images/30.png)
     </kbd>
+Click the *DEMO_HANA_DB* (or *DA262*) on the top left toolbar to go to the database overview page for next exercise.
+
 Continue to - [Exercise 11 - Managing Workload Classes](../ex11-Workload/README.md)
