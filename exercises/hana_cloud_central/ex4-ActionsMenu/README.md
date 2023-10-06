@@ -1,6 +1,6 @@
-# Exercise 3: Action Menu
+# Exercise 4: Action Menu
 
-## Exercise 3.1: Edit Instance
+## Exercise 4.1: Edit Instance
 
 In this exercise, we will discuss the *Manage Configuration* functionality across all the instance types. An existing instance can be modified after creation as per requirement through the *Manage Configuration* functionality. Let's edit the **DEMO_HANA_DB** (or **DA262** if you are using the SAP BTP Shared Subaccount) instance.
 
@@ -16,7 +16,7 @@ In this exercise, we will discuss the *Manage Configuration* functionality acros
     
     ![Change Allowed connections](images/3.png)
 
-## Exercise 3.2: Start, Stop, Upgrade Instance
+## Exercise 4.2: Start, Stop, Upgrade Instance
 In this section, we will discuss about how to start, stop, and upgrade instances from the SAP HANA Cloud Central application.
 
 1. Click the "..." button under Actions column for the DEMO_HANA_DB or DA262 database.
@@ -49,7 +49,7 @@ Please do not stop your instance if you are using the SAP BTP Shared Subaccount 
     > **Note**
     A similar procedure is available if you want to apply a patch to your SAP HANA Cloud instance.
 
-## Exercise 3.3: Other Actions
+## Exercise 4.3: Other Actions
 
 Now let us talk about the other Actions available for each of the instances. 
 
@@ -80,4 +80,4 @@ Now let us talk about the other Actions available for each of the instances.
    * **Copy Configuration:** Click on Copy Configuration. A popup opens with options to copy configuration to clipboard or download it as a JSON file. Depending on how often you will use your instance configuration, either copy or save the JSON-compliant string.
     ![Copy](images/19.png)
 
-Continue to - [Exercise 4 - Refresh and Auto-Refresh](../ex4-refresh/README.md)
+Continue to - [Exercise 5 - Command Palette](../ex5-CommandPalette/README.md)

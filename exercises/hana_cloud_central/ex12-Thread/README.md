@@ -1,4 +1,4 @@
-# Exercise 12: Performance Management
+# Exercise 12: Analyzing SQL Performance
 Managing and monitoring past and current information about the performance of the SAP HANA instance is important for root-cause analysis and the prevention of future performance issues. In this exercise, you'll explore the additional performance management tools available in the SAP HANA cockpit.
 
 1. Locate the **Threads** card. This card shows the number of active and blocked threads in the database. Clicking on it takes you to the **Threads** app, which is used to monitor the longest-running threads active in your system. It may be useful to see, for example, how long a thread is running, or if a thread is blocked for an inexplicable length of time.
@@ -6,7 +6,7 @@ Managing and monitoring past and current information about the performance of th
     ![](./images/1.png)
     </kbd>
 
-2. Click on the **Threads** card or use the **Command Palette** to launch the Threads application. When you launch this app, you'll see detailed information for approximately 200 longest-running threads currently active in the database.
+2. Click on the **Threads** card or use the **Command Palette** to launch the Threads application. When you launch this app, you'll see detailed information for approximately 1,000 longest-running threads currently active in the database.
 
     For each statement, you can see the duration, as well as the name of the service that is executing the thread. You can identify the host, and the thread type, whether the statement is related to a blocking transaction, and much more. Clicking on a thread gives the option to navigate to the sessions or blocked transactions associated with that connection ID. If a thread is involved in a blocked transaction or using an excessive amount of memory, you can cancel the operation executing the thread. You can view the call stack for this thread, although that is typically only useful to SAP Support when analyzing incidents.  You can view more details on the threads by adding columns to the table via the Settings button.
     <kbd>
@@ -48,8 +48,13 @@ Managing and monitoring past and current information about the performance of th
     ![](./images/8.png)
     </kbd>
 
-9. Click the **DEMO_HANA_DB** on the top-left toolbar to navigate to the Database Overview page for next exercise.
+9. Click the **User Transactions** button to open the *User Transactions* app. This app allows you to monitor all user transactions in the database. Similar to the Threads app, you can see the distribution of transactions by transaction status, blocking status, and a summary of top 10 applications, database users, and application users by clicking the *bar-chart* icon.
+    <kbd>
+    ![](./images/9.png)
+    </kbd>
+
+10. Click the **DEMO_HANA_DB** on the top-left toolbar to navigate to the Database Overview page for next exercise.
     
 
 
-Continue to - [Exercise 1 - Exercise 1 Description](../ex1/README.md)
+Continue to - [Exercise 13 - Plan Tace](../ex13-PlanTrace/README.md)

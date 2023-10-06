@@ -1,4 +1,4 @@
-# Exercise 2: Create Instances
+# Exercise 3: Create Instances
 
 > **Warning**
 Before we start the exercise, please read the following important instruction.
@@ -110,4 +110,4 @@ Click on Next Step once you complete all the fields.
     ![Create Instance](images/16.png)
  
 
-Continue to - [Exercise 3 - Actions Menu](../ex3-ActionsMenu/README.md)
+Continue to - [Exercise 4 - Actions Menu](../ex4-ActionsMenu/README.md)

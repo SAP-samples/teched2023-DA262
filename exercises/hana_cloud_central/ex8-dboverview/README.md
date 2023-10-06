@@ -33,5 +33,18 @@ This exercise will teach you the basics of navigating the Database Overview page
     
     Down further, you see security settings, such as User & Authorization Management. There are also a number of hyperlinks to launch additional administration applications.
 
-#
+5. Below the collapsible header, you will find a navigation bar where you can find the overview of database, the services, connections, configuration, plugins, and version of current instance.
+    <kbd>
+    ![](./images/6.png)
+    </kbd>
+
+6. In the **Service** section, you can find the status of different services, the Role, CPU usage, Memory usage, Start Time, Port, etc. You can also select the columns that you are interested by clicking the gear icon.
+    <kbd>
+    ![](./images/7.png)
+    </kbd>
+    <kbd>
+    ![](./images/8.png)
+    </kbd>
+7. Click the **Overview** button on the left of **Service** to return to the Database Overview section for next exercise.
+   
 Continue to - [Exercise 9: Monitoring Memory Usage](../ex9-Memory/README.md)

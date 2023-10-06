@@ -1,4 +1,4 @@
-# Exercise 4: Refresh and Auto-Refresh
+# Exercise 2: Refresh and Auto-Refresh
 
 This exercise will teach you the usage of manual refresh and auto-refresh button.
 
@@ -22,4 +22,4 @@ This exercise will teach you the usage of manual refresh and auto-refresh button
     <kbd>
     ![](./images/5.png)
     </kbd>
-Continue to - [Exercise 5: Command Palette](../ex5-CommandPalette/README.md)
+Continue to - [Exercise 3: Create Instances](../ex3-Instance/README.md)

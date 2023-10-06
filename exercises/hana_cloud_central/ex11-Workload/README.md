@@ -56,4 +56,4 @@ We manage workload in SAP HANA by creating workload classes and workload class m
 
 8. Click the **Back** button twice to return to the Database Overview page.
 
-Continue to - [Exercise 12 - Performance Management ](../ex12-Thread/README.md)
+Continue to - [Exercise 12 - Analyzing SQL Performance](../ex12-Thread/README.md)
