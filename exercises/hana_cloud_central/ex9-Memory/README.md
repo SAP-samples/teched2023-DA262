@@ -7,10 +7,10 @@ SAP HANA administrators must carefully monitor system computing resources to ens
     ![](./images/1.png)
     </kbd>
    
-   > **Note:** 
+    > **Note:** 
    You can also access the Usage Monitor app by clicking the Compute, Storage, and Network cards.
 
-   Alternatively, you can use the **Command Palette** to go to the Usage Monitor application. To do that, just type "usage monitor" in the search bar -> Click "Show Usage Monitor" for DEMO_HANA_DB 
+    Alternatively, you can use the **Command Palette** to go to the Usage Monitor application. To do that, just type "usage monitor" in the search bar -> Click "Show Usage Monitor" for DEMO_HANA_DB or DA262 
     <kbd>
     ![](./images/2.png)
     </kbd>

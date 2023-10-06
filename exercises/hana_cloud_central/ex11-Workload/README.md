@@ -1,7 +1,7 @@
 # Exercise 11: Managing Workload Classes
 We manage workload in SAP HANA by creating workload classes and workload class mappings. Appropriate workload parameters are then dynamically applied to each client session. You can classify workloads based on user and application context information and apply configured resource limitations (for example, a statement memory limit). Workload classes allow SAP HANA to influence dynamic resource consumption on the session or statement level. In this exercise you will learn how to create workload classes and how to monitor them.
 
-1. In the Database Overview Page, locate the **Workload Management** card. CLick "...", and then click the **Manage Workload Classes**. Another way to open the *Workload Management* app is using the Command Palette. You can search for "Workload Classes" and then click *Show Workload Classes*, which can bring you to the Workload Management app.
+1. In the Database Overview Page, locate the **Workload Management** card. Click "...", and then click the **Manage Workload Classes**. Another way to open the *Workload Management* app is using the Command Palette. You can search for "Workload Classes" and then click *Show Workload Classes*, which can bring you to the Workload Management app.
     <kbd>
     ![](./images/1.png)
     </kbd>

@@ -24,7 +24,7 @@ Let's see how to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Da
         *  You may not see this option if you are using the shared subaccount for DA262
      *  (Cloned) SAP HANA CLound, SAP HANA Database
      
-    You can choose the type of instance you would like to create and click on 'Next Step'. Let's create an SAP HANA Cloud, SAP HANA Database instance. Select that option and click on Next Step.
+    You can choose the type of instance you would like to create and click on **Next Step**. Let's create an SAP HANA Cloud, SAP HANA Database instance. Select that option and click on Next Step.
     ![select](images/2.png)
 
 2. Below are the field details that you see on this Create Instance screen, the values they take and the steps to successfully create an SAP HANA Cloud instance.
@@ -33,11 +33,11 @@ Let's see how to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Da
    * Description - A description of the instance.
    * Administrator Password - The password of the database 'superuser' DBADMIN. The password must have at least 8 characters and comprise at least one uppercase letter, two lowercase letters, and at least one number. The password must not include the user name, the characters ' " ` \ ; [ ], or control characters, such as newline, backspace, tab.
    * Version - The new instance you create can be of a specific supported version. By default, the latest version is used when creating a new SAP HANA Cloud instance.
-> Note that certain fields display helpful tips on what constitutes a valid entry (for example instance name, administrator password). You can also open the Help dialog by clicking its button on the toolbar in the top right. The contents of the Help are dynamic, meaning that they change depending on the dialog you're working on. In this case, you see additional information on the different fields of this page.
+    > Note that certain fields display helpful tips on what constitutes a valid entry (for example instance name, administrator password). You can also open the Help dialog by clicking its button on the toolbar in the top right. The contents of the Help are dynamic, meaning that they change depending on the dialog you're working on. In this case, you see additional information on the different fields of this page.
 
 
-Click on Next Step once you complete all the fields.
-    ![complete all the fields](images/3.png)
+    Click on **Next Step** once you complete all the fields.
+        ![complete all the fields](images/3.png)
 
 3. Details of the fields that you see on this screen:
 
@@ -57,14 +57,14 @@ Click on Next Step once you complete all the fields.
 
    ![Step 3](images/4.png)
 
-4. Click on the Next Step button once the memory and storage configurations are completed. In this step, you have an option to choose availability zones. Basically, it specifies where the database instances are placed. You can also deploy replicas of your SAP HANA database instance. Important notes:
+4. Click on the **Next Step** button once the memory and storage configurations are completed. In this step, you have an option to choose availability zones. Basically, it specifies where the database instances are placed. You can also deploy replicas of your SAP HANA database instance. Important notes:
 
     * Availability zones and replicas are not available in SAP HANA Cloud trial instances.
     * You cannot change the availability zone of an instance once it is created. If you want to change the availability zone for an instance, delete the instance and re-create it with the preferred availability zone.
     
     ![Availability Zone](images/5.png)
 
-5. Click on Next Step. There is an Additional Features section to make configurations on Script Server (to execute application function libraries) and Document Store (for native operations on JSON documents) capabilities. Then you have an option to make configurations related to allowed connections like IP address settings. Select Allow all IP addresses.
+5. Click on **Next Step**. There is an Additional Features section to make configurations on Script Server (to execute application function libraries) and Document Store (for native operations on JSON documents) capabilities. Then you have an option to make configurations related to allowed connections like IP address settings. Select Allow all IP addresses.
 
     ![Step 5](images/7.png)
 
@@ -72,22 +72,22 @@ Click on Next Step once you complete all the fields.
    If you are using the **SAP BTP Shared Subaccount for DA262**, click the *Cancel* button and then *Leave* button to return to the ALL Instances view in SAP HANA Cloud Central. Otherwise, you can continue with following steps.
 
 
-6. Click on Next Step to proceed to Data Lake related settings. In this step, you have the option to create an SAP HANA Cloud, data lake instance along with creating an SAP HANA Database instance. To do so, you must enable the Create Data Lake toggle button and fill in the related details. After clicking on Create Data Lake toggle button, enter the Data Lake instance name, make configurations to the required Storage services. Click on Next Step.
+6. Click on **Next Step** to proceed to Data Lake related settings. In this step, you have the option to create an SAP HANA Cloud, data lake instance along with creating an SAP HANA Database instance. To do so, you must enable the Create Data Lake toggle button and fill in the related details. After clicking on Create Data Lake toggle button, enter the Data Lake instance name, make configurations to the required Storage services. Click on **Next Step**.
     
     ![Create Data Lake](images/8.png)
 
-7. Adjust the size if necessary and click on Next Step.
+7. Adjust the size if necessary and click on **Next Step**.
     
     ![Step 7](images/9.png)
 
-8. Here you have the liberty to make configurations on the IP address settings as per your requirements. You can choose to only allow access to the instance from SAP Business Technology Platform (default) or only from trusted IP addresses by specifying IP address filter ranges. Up to 45 entries can be specified. Click on Review and Create button.
+8. Here you have the liberty to make configurations on the IP address settings as per your requirements. You can choose to only allow access to the instance from SAP Business Technology Platform (default) or only from trusted IP addresses by specifying IP address filter ranges. Up to 45 entries can be specified. Click on **Review and Create** button.
 
      ![Step 8](images/10.png)
 
 9. You can now review the instance details in this page.
     ![Review Page](images/11.png)
 
-10. Click the Copy Configuration button in the bottom right corner. A pop-up window will appear that provides a JSON-compliant string to create a new SAP HANA database with the same configuration details you have just entered. There is the option of copying the configuration to the clipboard or downloading it as a JSON file. This allows you to save the entered configuration so that you can re-use it in the future.
+10. Click the **Copy Configuration** button in the bottom right corner. A pop-up window will appear that provides a JSON-compliant string to create a new SAP HANA database with the same configuration details you have just entered. There is the option of copying the configuration to the clipboard or downloading it as a JSON file. This allows you to save the entered configuration so that you can re-use it in the future.
     
     ![Copy Configuration](images/12.png)
 

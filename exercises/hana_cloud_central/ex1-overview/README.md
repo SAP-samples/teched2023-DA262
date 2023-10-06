@@ -9,7 +9,7 @@ This exercise will teach you the basics of navigating the Database Overview Page
     ![](./images/1.png)
     </kbd>
 
-2. SAP HANA Cloud Central is launched in a new tab. **Note:** We are using the Multi-Environment Edition for this workshop. To verify that you are in the correct landscape, click the **i** button in the lower left corner. 
+2. SAP HANA Cloud Central is launched in a new tab. We are using the Multi-Environment Edition for this workshop. To verify that you are in the correct landscape, click the **i** button in the lower left corner. 
     <kbd>
     ![](./images/2.png)
     </kbd>
@@ -23,5 +23,5 @@ The SAP HANA Cloud Central tool is divided into several sections:
 
 As an SAP HANA Cloud administrator, you will likely spend a lot of time monitoring all your instances in SAP HANA Cloud Central.  From the instances list, you'll be able to see computing details of your databases, whether they are running or stopped, review their notifications, and perform actions on them.
 
-Continue to - [Exercise 2: Refresh and Auto-refresh](../ex2-Refresh/README.md)
+Continue to - [Exercise 2: Refresh and Auto-Refresh](../ex2-Refresh/README.md)
 

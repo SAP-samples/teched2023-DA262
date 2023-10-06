@@ -4,7 +4,7 @@
 
 In this exercise, we will discuss the *Manage Configuration* functionality across all the instance types. An existing instance can be modified after creation as per requirement through the *Manage Configuration* functionality. Let's edit the **DEMO_HANA_DB** (or **DA262** if you are using the SAP BTP Shared Subaccount) instance.
 
- 1. Click on the '...' icon (under the Actions menu in the instances list) to see the operations that can be performed on the DEMO_HANA_DB (or DA262) database. Click on Manage Configuration.
+ 1. Click on the '...' icon (under the Actions menu in the instances list) to see the operations that can be performed on the DEMO_HANA_DB (or DA262) database. Click on **Manage Configuration**.
 
     ![Click on Manage Configuration](images/1.png)
 
@@ -12,7 +12,7 @@ In this exercise, we will discuss the *Manage Configuration* functionality acros
    
    ![Manage Configuration App](images/2.png)
 
-3. Let's make a change: in the Connections section, select 'Allow all only BTP IP addresses' (or use a different option if that's already selected). The Save button will only be enabled when you make a valid change. Click on *Review and Save* button at the bottom right. Then you can review the changes you made. Click *Save Changes with Restart*, it will bring you to the SAP HANA Cloud Central instance page. The edited instance restarts to adapt itself to the recently made changes.
+3. Let's make a change: in the *Connections* section, select 'Allow all only BTP IP addresses' (or use a different option if that's already selected). The Save button will only be enabled when you make a valid change. Click on **Review and Save** button at the bottom right. Then you can review the changes you made. Click **Save Changes with Restart**, it will bring you to the SAP HANA Cloud Central instance page. The edited instance restarts to adapt itself to the recently made changes.
     
     ![Change Allowed connections](images/3.png)
 
@@ -28,14 +28,14 @@ Stopping and Starting an instance can take up to 5 minutes. You may choose to do
 > **Warning**
 Please do not stop your instance if you are using the SAP BTP Shared Subaccount for DA262. 
 
-2. Click the Stop menu item. A pop up shows up, confirming that you want to continue with stopping the instance. Click the Stop button.
+2. Click the **Stop** menu item. A pop up shows up, confirming that you want to continue with stopping the instance. Click the **Stop** button.
     ![CLick Stop](images/5.png)
     ![Pop-up](images/6.png)
 
-3. You'll see the instance's status changing to 'Stopping' and you can see more details by clicking on that word (it's a hyperlink). Stopping the instance will take a few minutes. Use Refresh or Auto Refresh (covered in exersise 4) to update the screen during this process.
+3. You'll see the instance's status changing to 'Stopping' and you can see more details by clicking on that word (it's a hyperlink). Stopping the instance will take a few minutes. Use Refresh or Auto Refresh (covered in exersise 2) to update the screen during this process.
     ![](images/7.png)
 
-4. After the instance stops, let's start it again. Click the "..." button under the Actions column. Click on Start.
+4. After the instance stops, let's start it again. Click the "..." button under the Actions column. Click on **Start**.
     ![Click Start](images/8.png)
 
 5. We can see that the instance has moved to status 'Starting'. On clicking the 'Starting' hyperlink we see details on the date and time when the instance was initiated and updated.
@@ -53,7 +53,7 @@ Please do not stop your instance if you are using the SAP BTP Shared Subaccount 
 
 Now let us talk about the other Actions available for each of the instances. 
 
-1. Click on the "..." button under the Actions column for the DEMO_HANA_DB or DA262 instance. Click on Open in SAP HANA Cockpit menu item in the Actions list. We can directly open the SAP HANA Cockpit to administer the SAP HANA instance from the SAP HANA Cloud Central page.
+1. Click on the "..." button under the Actions column for the DEMO_HANA_DB or DA262 instance. Click on **Open in SAP HANA Cockpit** menu item in the Actions list. We can directly open the SAP HANA Cockpit to administer the SAP HANA instance from the SAP HANA Cloud Central page.
    ![HANA Cockpit](images/12.png)
 
 2. SAP HANA Cockpit opens in an adjacent new tab. Fill in the credentials (username is DBADMIN, password is what you provided when creating the instance).
@@ -63,11 +63,11 @@ Now let us talk about the other Actions available for each of the instances.
 3. You are now on the SAP HANA cockpit's Database Overview page. Here, you can perform various monitoring and administrating operations on our SAP HANA Cloud instance. You will learn more about the SAP HANA cockpit in future exercises.
    ![HANA Cockpit](images/14.png)
 
-4. We can also open the SAP HANA Database Explorer to create SQL scripts and run them. Switch to the tab with SAP HANA Cloud Central and click on Open in SAP HANA Database Explorer menu item in the Actions column for the SAP HANA database. SAP HANA Database Explorer opens in an adjacent new tab.
+4. We can also open the SAP HANA Database Explorer to create SQL scripts and run them. Switch to the tab with SAP HANA Cloud Central and click on **Open in SAP HANA Database Explorer** menu item in the Actions column for the SAP HANA database. SAP HANA Database Explorer opens in an adjacent new tab.
     ![DBX](images/15.png)
     ![DBX](images/16.png)
 
-5. Return to SAP HANA Cloud Central. Click the "..." button under the Actions column for the DEMO_HANA_DB instance again. Now click on Open SQL Console menu item. It opens the SQL Console in the same tab. More exersises related to SQL Console are available in exercise 7. 
+5. Return to SAP HANA Cloud Central. Click the "..." button under the Actions column for the DEMO_HANA_DB instance again. Now click on **Open SQL Console** menu item. It opens the SQL Console in the same tab. More exersises related to SQL Console are available in exercise 7. 
    ![SQL Console](images/18.png)
     ![SQL Console](images/17.png)
 

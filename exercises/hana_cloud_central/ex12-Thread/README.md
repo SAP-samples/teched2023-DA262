@@ -14,7 +14,7 @@ Managing and monitoring past and current information about the performance of th
     </kbd>
 
 3.  Click the **bar-chart** icon. In addition to the thred details, you can see the distribution of threads by thread status, and by thread type. You can also see the summary of top 10 applications, application users, and database users. 
-   <kbd>
+    <kbd>
     ![](./images/3.png)
     </kbd>
 
@@ -23,7 +23,7 @@ Managing and monitoring past and current information about the performance of th
     ![](./images/4.png)
     </kbd>
 5. This app allows you to monitor all sessions in the database. It can be used to see whether a session is blocked and, if so, which session is blocking it. Similar to the Threads app, you can see a summary of the top users, applications and sessions. When a session row is selected, you can navigate to threads and blocked transactions with a specific connection ID. You can cancel a session. 
-   <kbd>
+    <kbd>
     ![](./images/5.png)
     </kbd>
 
@@ -36,6 +36,7 @@ Managing and monitoring past and current information about the performance of th
     <kbd>
     ![](./images/6.png)
     </kbd>
+
     Click OK. You added columns to see the database user, the number of queries in this session, along with its average number of records fetched and query time. By examining these metrics, you can determine whether the queries in this session are returning the expected number of rows and are executing in the expected amount of time.
 
 7. On the drop-down menu from the toolbar (top left), click on **Sessions** and select **SQL Statements** from menu to navigate to that app. You can also click the **SQL Statements** card in the Database Overview page to launch the *SQL Statements* application, where you can have a look at an overview of the statements, active statements, SQL plan cache and expensive statements.
@@ -57,4 +58,4 @@ Managing and monitoring past and current information about the performance of th
     
 
 
-Continue to - [Exercise 13 - Plan Tace](../ex13-PlanTrace/README.md)
+Continue to - [Exercise 13 - Plan Trace](../ex13-PlanTrace/README.md)

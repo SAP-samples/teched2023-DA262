@@ -3,7 +3,7 @@
 This exercise will teach you the usage of manual refresh and auto-refresh button.
 
   
-1. At the top right of the **SAP HANA Cloud Central**, you 'll find the tool bar. It contains the **Search Commands** (in exercise 5), the **give feedback** button, the manual **refresh** and **auto-refresh** button ( will be cover in this exercise), the help button (for content-specific online help), the notification button, the user button (for user-specific settings and options), and the switch product button.
+1. At the top right of the **SAP HANA Cloud Central**, you 'll find the tool bar. It contains the **Search Commands** (in exercise 5), the give feedback button, the manual refresh and auto-refresh button (will be cover in this exercise), the help button (for content-specific online help), the notification button, the user button (for user-specific settings and options), and the switch product button.
     <kbd>
     ![](./images/1.png)
     </kbd>

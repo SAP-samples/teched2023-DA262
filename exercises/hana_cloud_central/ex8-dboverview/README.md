@@ -9,7 +9,7 @@ This exercise will teach you the basics of navigating the Database Overview page
     <kbd>
     ![](./images/1.png)
     </kbd>
-2. On the bottom panel, you'll find a list of instances. Click the right arrow on the bery right end of instance DEMO_HANA_DB to access the database overview page.
+2. On the bottom panel, you'll find a list of instances. Click the right arrow on the bery right end of instance DEMO_HANA_DB (or DA262) to access the database overview page.
     <kbd>
     ![](./images/2.png)
     </kbd>
@@ -18,11 +18,11 @@ This exercise will teach you the basics of navigating the Database Overview page
     ![](./images/3.png)
     </kbd>
 
-3. Alternativly, you can use the command palette. Click the search button on the toolbar -> type "overview" -> Select "Show Overview" for DEMO_HANA_DB. It will take you to the same page as we get in step 2.
+3. Alternativly, you can use the command palette. Click the search button on the toolbar -> type "overview" -> Select "Show Overview" for DEMO_HANA_DB (or DA262). It will take you to the same page as we get in step 2.
    <kbd>
     ![](./images/5.png)
     </kbd>
-4. Below the toolbar you see the collapsible header, where you'll find the status of the database, the database user you're connecting as, the host name, and associated Data Lake. From the header, you can also manage configuration,open the SQL Console, and Copy SQL endpoint. 
+4. Below the toolbar you see the collapsible header, where you'll find the status of the database, the database user you're connecting as, the host name, and associated Data Lake. From the header, you can also manage configuration, open the SQL Console, and copy SQL endpoint. 
     <kbd>
     ![](./images/4.png)
     </kbd>

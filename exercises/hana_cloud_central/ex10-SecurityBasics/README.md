@@ -7,18 +7,21 @@ In this exercise, you'll create a new user, a new role and a new user group.
 
 1. In Database Overview page, located the User & Authorization Management card.  Let's first create a new user group. We have 3 ways to do that:
    1. Click the *User Groups* hyperlink -> Click *Create User Group*
-   <kbd>
+    <kbd>
     ![User&Authorization Management card](./images/1.png)
     </kbd>
-    User groups can group together users with similar roles and enforce a specific password policy on the group.
+    
+        User groups can group together users with similar roles and enforce a specific password policy on the group.
     <kbd>
     ![User Management app](./images/2.png)
     </kbd>
+
     2. We can also use the Command Palette to open the User Management app:
     Click the Search icon on the top -> type " User Groups" -> Click "Show User Groups" under the DEMO_HANA_DB (or DA262 if you are using a SAP BTP Shared Subaccount). It opens the User Management app for you. Click *Create User Group*
     <kbd>
     ![Show User Groups](./images/3.png)
     </kbd>
+
     3. You may notice that there is a *Create User Groups* command when searching for "User Groups" in Command Palette. Click it, it then opens the *Create User Group* app for you.
     <kbd>
     ![Show User Groups](./images/4.png)
@@ -31,7 +34,7 @@ In this exercise, you'll create a new user, a new role and a new user group.
 
 
    Leave the rest of the options in their default settings. Click **Save**. Then you can see the basic information about this newly created user group.
-   <kbd>
+    <kbd>
     ![Create User Groups](./images/5.png)
     </kbd>
     <kbd>
@@ -63,7 +66,7 @@ In this exercise, you'll create a new user, a new role and a new user group.
     ![](./images/10.png)
     </kbd>
 
-7. Let's noew create a new user. Click the **Create User** button. Enter the full-screen mode.
+7. Let's now create a new user. Click the **Create User** button. Enter the full-screen mode.
    <kbd>
     ![](./images/11.png)
     </kbd>
@@ -97,12 +100,12 @@ In this exercise, you'll create a new user, a new role and a new user group.
     ![Create Role](./images/15.png)
     </kbd>
 
-12. CLick **Add** button and type *Catalog* in to the search bar. Select the **CATALOG_READ** system privilege. Click the **SELECT** button to dismiss the dialog.
+12. Click **Add** button and type *Catalog* in to the search bar. Select the **CATALOG_READ** system privilege. Click the **SELECT** button to dismiss the dialog.
     <kbd>
     ![Create Role](./images/16.png)
     </kbd>
 
-13.  Click the Save button. 
+13.  Click the **Save** button. 
     <kbd>
     ![Create Role](./images/17.png)
     </kbd>
