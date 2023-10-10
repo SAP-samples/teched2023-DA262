@@ -1,4 +1,4 @@
-# Exercise 4: Action Menu
+# Exercise 4: Actions Menu
 
 ## Exercise 4.1: Edit Instance
 

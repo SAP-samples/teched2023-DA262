@@ -30,14 +30,18 @@ Choose a method to access the SAP BTP by following Exercise 1 or Exercise 2 belo
 SAP HANA Cloud Central provides database administrators (DBAs) with a unified tool to administer and monitor SAP HANA Cloud databases and SAP HANA Cloud data lake instances.
 
 - [Exercise 1 - Overview of SAP HANA Cloud Central](exercises/hana_cloud_central/ex1-overview/)
-- [Exercise 2 - Create, Edit, Start, and Stop Instances](exercises/hana_cloud_central/ex2-Instance/)
-- [Exercise 3 - Action Menu](exercises/hana_cloud_central/ex3-ActionsMenu/)
-- [Exercise 4 - Refresh and Auto-Refresh](exercises/hana_cloud_central/ex4-refresh/)
+- [Exercise 2 - Refresh and Auto-Refresh](exercises/hana_cloud_central/ex2-refresh/)
+- [Exercise 3 - Create Instances](exercises/hana_cloud_central/ex3-Instance/)
+- [Exercise 4 - Actions Menu](exercises/hana_cloud_central/ex4-ActionsMenu/)
 - [Exercise 5 - Command Palette](exercises/hana_cloud_central/ex5-CommandPalette/)
 - [Exercise 6 - Alerts](exercises/hana_cloud_central/ex6-alerts/)
 - [Exercise 7 - SQL Console](exercises/hana_cloud_central/ex7-SQLConsole)
 - [Exercise 8 - The Database Overview Page](exercises/hana_cloud_central/ex8-dboverview/)
 - [Exercise 9 - Monitoring Memory Usage](exercises/hana_cloud_central/ex9-Memory/)
+- [Exercise 10 - Security Basics](exercises/hana_cloud_central/ex10-SecurityBasics/)
+- [Exercise 11 - Managing Workload Classes](exercises/hana_cloud_central/ex11-Workload)
+- [Exercise 12 - Analyzing SQL Performance](exercises/hana_cloud_central/ex12-Thread)
+- [Exercise 13 - Plan Trace](exercises/hana_cloud_central/ex13-PlanTrace)
 
 
 ## SAP HANA Database Explorer - 20 minutes

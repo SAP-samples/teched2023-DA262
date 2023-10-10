@@ -66,7 +66,7 @@ In this exercise, you'll create a new user, a new role and a new user group.
     </kbd>
 
 10. Let's now create a new user. Click the **Create User** button. Enter the full-screen mode.
-   <kbd>
+    <kbd>
     ![](./images/11.png)
     </kbd>
 
@@ -168,6 +168,7 @@ In this exercise, you'll create a new user, a new role and a new user group.
      <kbd>
     ![](./images/30.png)
     </kbd>
+
 Click the *DEMO_HANA_DB* (or *DA262*) on the top left toolbar to go to the database overview page for next exercise.
 
 Continue to - [Exercise 11 - Managing Workload Classes](../ex11-Workload/README.md)
