@@ -484,8 +484,7 @@ A theme can be selected for SAP HANA Cloud Central which includes the SQL Consol
 
 ## Summary
 
-You now have an overview of the features of the SQL Console in SAP HANA Cloud Central.  Further details can be found in the tutorial learning journey [Query Databases Using the SQL Console in SAP HANA Cloud Central](https://developers.sap.com/tutorials/hana-dbx-hcc.html).
+You now have an overview of the features of the SQL Console in SAP HANA Cloud Central.  Further details can be found in the tutorial [Query Databases Using the SQL Console in SAP HANA Cloud Central](https://developers.sap.com/tutorials/hana-dbx-hcc.html).
 
-Continue to - [Exercise 1 - Overview of the SAP HANA database explorer](../../database_explorer/ex1/README.md)
 Continue to - [Exercise 8 - The Database Overview Page](../ex8-dboverview/README.md)
 
