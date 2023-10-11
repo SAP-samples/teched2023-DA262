@@ -2,9 +2,7 @@
 
 This exercise will provide instructions on how to access the shared subaccount provided for attendees of this SAP TechEd hands-on workshop.  
 
-Open the <a href="https://emea.cockpit.btp.cloud.sap/cockpit/?idp=tdct3ched1.accounts.ondemand.com#/globalaccount/e2a835b0-3011-4c79-818a-d7767c4627cd" target="_blank">SAP BTP Cockpit</a>.
-
-1. Open the [SAP BTP Cockpit](https://emea.cockpit.btp.cloud.sap/cockpit/?idp=tdct3ched1.accounts.ondemand.com#/globalaccount/e2a835b0-3011-4c79-818a-d7767c4627cd).
+1. Open the [SAP BTP Cockpit](https://emea.cockpit.btp.cloud.sap/cockpit/?idp=tdct3ched1.accounts.ondemand.com#/globalaccount/e2a835b0-3011-4c79-818a-d7767c4627cd){:target="_blank"}.
 
 2. Login with the provided SAP BTP user and password provided in the hands-on workshop.
 
