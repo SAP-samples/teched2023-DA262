@@ -1,4 +1,4 @@
-# Appendix 8: Native Storage Extension
+# Appendix 7: Native Storage Extension
 
 SAP HANA Native Storage Extension (NSE) is a general-purpose, built-in warm data store in SAP HANA that lets you manage less-frequently accessed data without fully loading it into memory. It integrates disk-based or flash-drive based database technology with the SAP HANA in-memory database for an improved price-performance ratio. All SAP HANA Native Storage Extension (NSE) administrative tasks are moved to a dedicated card in the SAP HANA Cloud Central Database Overview page. A dedicated NSE card simplifies administration and improves the user experience by enabling cockpit users to manage all NSE operations from a centralized application.
 
@@ -32,4 +32,4 @@ SAP HANA Native Storage Extension (NSE) is a general-purpose, built-in warm data
     ![](./images/5.png)
     </kbd>
 
-Continue to - [Exercise 1 - Exercise 1 Description](../ex1/README.md)
+Continue to - [Appendix 8 - Table Partition](../appendix8-TablePartition/README.md)

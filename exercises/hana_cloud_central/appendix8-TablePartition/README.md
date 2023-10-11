@@ -1,4 +1,4 @@
-# Appendix 9: Table Distribution and Partition
+# Appendix 8: Table Distribution and Partition
 
 Tables and table partitions can be distributed across multiple hosts. The location of the tables and partitions can affect performance when, for example, queries need to access several distributed tables. You may want to use table redistribution to automatically redistribute the tables or partitions to specific hosts in order to optimize query performance, or you may want to add a new host to a scale-out system and therefore need to redistribute the tables so that some will reside on the new host.
 
