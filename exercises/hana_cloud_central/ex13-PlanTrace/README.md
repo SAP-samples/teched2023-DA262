@@ -19,6 +19,6 @@ Plan trace enables users to collect SQL queries and their execution plans, execu
     ![](./images/4.png)
     </kbd>
 
-This concludes the exercises on the SAP HANA Cloud Central. Optionally, view the additional content in the appendix.
+This concludes the exercises on the SAP HANA Cloud Central. Optionally, view the additional content in the [SAP HANA Cloud Central - Appendix 1 - Searching and Filtering](../appendix1-Filtering/README.md).
 
-Continue to - [Exercise 1 - Exercise 1 Description](../ex1/README.md)
+Back to - [DA262 - SAP HANA Cloud from an administrator's perspective](../../../README.md)

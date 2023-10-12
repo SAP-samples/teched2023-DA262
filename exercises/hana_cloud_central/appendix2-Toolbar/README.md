@@ -24,12 +24,12 @@ In this exercise, we will introduce the toolbar for you.
 
 5. You can access the settings by clicking the profile icon. In settings, you can see your personal information, change preferred theme and region, and enable/ disable display basic setup notifications.
     <kbd>
-    ![](./images/4.png)
+    ![](./images/5.png)
     </kbd>  
 
 6. The last tool in the toolbar allow you to switch to the SAP BTP Cockpit. SAP BTP Cockpit will open in a new tab if you click the button.
     <kbd>
-    ![](./images/4.png)
+    ![](./images/6.png)
     </kbd>  
 
 Continue to - [Appendix 3: Views](../appendix3-Views/README.md)

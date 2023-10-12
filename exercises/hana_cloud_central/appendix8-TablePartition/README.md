@@ -24,5 +24,8 @@ This exercise will walk you through the table distribution and partition feature
     ![](./images/4.png)
     </kbd>
 
+This completes the appendices on the SAP HANA Cloud Central.
 
-Continue to - [Exercise 1 - Exercise 1 Description](../ex1/README.md)
+Back to - [DA262 - SAP HANA Cloud from an administrator's perspective](../../../README.md)
+
+Optionally continue to [SAP HANA Database Explorer - Exercise 1 - Instances in the SAP HANA Database Explorer](../../sap_btp/ex1/README.md)
