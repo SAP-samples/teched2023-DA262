@@ -1,8 +1,8 @@
-# Exercise 7 - SQL Console
+# Exercise 6 - SQL Console
 
 This exercise will demonstrate the functionality in the SQL Console that is included in SAP HANA Cloud Central.  The same SQL Console component is also available in the [SAP HANA database explorer](https://marketplace.visualstudio.com/items?itemName=SAPSE.hana-database-explorer) extension for Visual Studio Code and the SAP Business Application Studio.   
 
-## Exercise 7.1 Open the SQL Console
+## Exercise 6.1 Open the SQL Console
 
 1. The SQL Console can be opened in multiple ways as shown below.  Explore the various ways the SQL Console can be opened.
 
@@ -30,14 +30,14 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
 
     ![sample query](images/sample-query.png)
 
-## Exercise 7.2 Themes
+## Exercise 6.2 Themes
 A theme can be selected for SAP HANA Cloud Central which includes the SQL Console.  
 
 1. Navigate to **Settings** > **Appearance** and try out a few of the theme options.  The default theme is SAP Morning Horizon.
 
     ![Theme selection](images/theme-selection.png)
 
-## Exercise 7.3 Connect Instance Dialog
+## Exercise 6.3 Connect Instance Dialog
 
 1. An instance that the SQL Console is connected to can be changed in the instance dialog.
 
@@ -47,19 +47,19 @@ A theme can be selected for SAP HANA Cloud Central which includes the SQL Consol
 
     ![connected instance dialog](images/connected-instance-dialog.png)
 
-## Exercise 7.4 Multiple SQL Tabs
+## Exercise 6.4 Multiple SQL Tabs
 1. Additional SQL Console tabs can be opened enabling connections to different instances or to the same instance but with a different set of credentials.
 
     ![open additional SQL Console tabs](images/open-sql-console-tab.png)
 
-## Exercise 7.5 Download or Import SQL
+## Exercise 6.5 Download or Import SQL
 1. The contents of a SQL Console can be downloaded or imported.  
 
     ![download or upload](images/download-and-upload.png)
 
     The contents of a SQL Console are not preserved between browser reloads in the current version.
 
-## Exercise 7.6 Create Database Objects
+## Exercise 6.6 Create Database Objects
 1. Execute the below SQLScript to create a usergroup, two users, two roles with privileges, a schema, a few tables, a view, a function, and a stored procedure.  **If you are attending SAP TechEd and are using the shared DA262 instance, this SQL will already have been executed**.
 
     ```SQL
@@ -216,7 +216,7 @@ A theme can be selected for SAP HANA Cloud Central which includes the SQL Consol
 
     ![create schema](images/create-schema.png)
 
-## Exercise 7.7 Populate Database Objects
+## Exercise 6.7 Populate Database Objects
 1. Execute the following SQL statements to add some data to the tables.  **If you are attending SAP TechEd and are using the shared instance, this SQL will already have been executed**.
 
     ```SQL
@@ -309,7 +309,7 @@ A theme can be selected for SAP HANA Cloud Central which includes the SQL Consol
     INSERT INTO MAINTENANCE VALUES(12, 26, 'Roof repair due to storm', null, null);
     ```
 
-## Exercise 7.8 Change User
+## Exercise 6.8 Change User
 1. The user can be changed with the connect statement and viewed with the CURRENT_USER function.
 
     ```SQL
@@ -325,7 +325,7 @@ A theme can be selected for SAP HANA Cloud Central which includes the SQL Consol
     
     TODO feature coming soon.  ![](images/todo.png)
 
-## Exercise 7.8 Change Schema
+## Exercise 6.9 Change Schema
 1. An example of changing the schema is shown below.  
 
     ```SQL
@@ -351,7 +351,7 @@ A theme can be selected for SAP HANA Cloud Central which includes the SQL Consol
 
     The schemas that the current user has access to are displayed.
 
-## Exercise 7.10 Connection Settings
+## Exercise 6.10 Connection Settings
 1. Examine the **Connection Settings**.  
 
     ![connection settings](images/connection-settings.png)
@@ -377,7 +377,7 @@ A theme can be selected for SAP HANA Cloud Central which includes the SQL Consol
 
     ![one thousand row limit](images/settings-result2.png)
 
-## Exercise 7.11 Specifying Input Parameters
+## Exercise 6.11 Specifying Input Parameters
 1. Execute the following SQL statement.
 
     ```SQL
@@ -389,7 +389,7 @@ A theme can be selected for SAP HANA Cloud Central which includes the SQL Consol
 
     ![run with parameters](images/run-with-parameters.png)
 
-## Exercise 7.12 Messages and History Tabs
+## Exercise 6.12 Messages and History Tabs
 1. Execute the following SQL statements.
 
     ```SQL
@@ -407,7 +407,7 @@ A theme can be selected for SAP HANA Cloud Central which includes the SQL Consol
 
     >The contents of the Messages and History tabs can be cleared by refreshing the browser.
 
-## Exercise 7.13 Result Viewers
+## Exercise 6.13 Result Viewers
 1. Execute the following SQL statements.
 
     ```SQL
@@ -439,12 +439,12 @@ A theme can be selected for SAP HANA Cloud Central which includes the SQL Consol
 
     ![JSON viewer](images/json-viewer.png)
 
-## Exercise 7.14 Statement Help
+## Exercise 6.14 Statement Help
 1. Click on the **Statement Help** icon.  Notice that details of the table and function used in the current statement is shown.
 
     ![statement help](images/statement-help.png)
 
-## Exercise 7.15 Shortcut Keys
+## Exercise 6.15 Shortcut Keys
 1. A few of the common shortcut keys are listed below.  Try a few of them out.
 
     Action | Shortcut
@@ -463,7 +463,7 @@ A theme can be selected for SAP HANA Cloud Central which includes the SQL Consol
 
     >The shortcut keys may vary depending on the browser used.
 
-## Exercise 7.16 Download or Copy Results
+## Exercise 6.16 Download or Copy Results
 1. Execute the followng SQL statement.
 
     ```SQL
@@ -486,5 +486,5 @@ A theme can be selected for SAP HANA Cloud Central which includes the SQL Consol
 
 You now have an overview of the features of the SQL Console in SAP HANA Cloud Central.  Further details can be found in the tutorial [Query Databases Using the SQL Console in SAP HANA Cloud Central](https://developers.sap.com/tutorials/hana-dbx-hcc.html).
 
-Continue to - [Exercise 8 - The Database Overview Page](../ex8-dboverview/README.md)
+Continue to - [Exercise 7 - Alerts](../ex7-Alerts/README.md)
 

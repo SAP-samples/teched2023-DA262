@@ -12,7 +12,7 @@ In this exercise, you will learn how to use the Command Palette.
    <kbd>
     ![](./images/4.png)
     </kbd>
-3. You can also search a command by typing key words into the search bar. For example, we can type "alert", and click the "Show Alerts" command. By doing that, the system will take you to the **Alert** application, which will be cover in the next exercise.
+3. You can also search a command by typing key words into the search bar. For example, we can type "alert", and click the "Show Alerts" command. By doing that, the system will take you to the **Alert** application, which will be cover in the future exercise.
    <kbd>
     ![](./images/2.png)
     </kbd>
@@ -20,4 +20,6 @@ In this exercise, you will learn how to use the Command Palette.
     ![](./images/3.png)
     </kbd>
 
-Continue to - [Exercise 6: Alerts](../ex6-alerts/README.md)
+4. Let's go back to the main page by clicking the *Database* icon on the top of left toolbar for the next exercise.
+
+Continue to - [Exercise 6: SQL Console](../ex6-SQLConsole/README.md)
