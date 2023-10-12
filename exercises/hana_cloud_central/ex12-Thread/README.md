@@ -33,9 +33,9 @@ Managing and monitoring past and current information about the performance of th
     * Number of Queries
     * Average Number Of Records Fetched
     * Average Query Time (ms)
-    <kbd>
-    ![](./images/6.png)
-    </kbd>
+        <kbd>
+        ![](./images/6.png)
+        </kbd>
 
     Click OK. You added columns to see the database user, the number of queries in this session, along with its average number of records fetched and query time. By examining these metrics, you can determine whether the queries in this session are returning the expected number of rows and are executing in the expected amount of time.
 

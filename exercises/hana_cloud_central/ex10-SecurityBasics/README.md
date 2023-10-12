@@ -90,9 +90,9 @@ In this exercise, you'll create a new user, a new role and a new user group.
 
 13. You are now in the **Role Management** app. Click the **Create Role** and create a new role with the following attributes:
     * Role: TECHNICAL_USER_ROLE or *Your First Name + Random Number_ROLE*
-    <kbd>
-    ![Create Role](./images/14.png)
-    </kbd>
+        <kbd>
+        ![Create Role](./images/14.png)
+        </kbd>
 
 14. You can now add privileges to this user role. Click the **System Privileges** tab and click the **Edit System Privileges** button.
     <kbd>

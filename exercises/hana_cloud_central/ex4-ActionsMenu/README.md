@@ -71,7 +71,7 @@ Now let us talk about the other Actions available for each of the instances.
    ![SQL Console](images/18.png)
     ![SQL Console](images/17.png)
 
-6. Return to SAP HANA CLoud Central by clicking the **Instance** button on the top left nav bar. Click the "..." under the Actions column for the DEMO_HANA_DB instance again. We have 3 copy options: 
+6. Return to SAP HANA Cloud Central by clicking the **Instance** button on the top left nav bar. Click the "..." under the Actions column for the DEMO_HANA_DB instance again. We have 3 copy options: 
    
    * **Copy SQL Endpoints:** Upon clicking this, the SQL endpoint is copied to the clipboard. We get a success message saying that the SQL endpoint is copied to the clipboard. SQL Endpoints are useful when you want to connect to your SAP HANA Cloud instance from other applications or if you want to access it from the command line.
   
