@@ -8,7 +8,7 @@ In this exercise, we will discuss the *Manage Configuration* functionality acros
 
     ![Click on Manage Configuration](images/1.png)
 
-2. An Edit instance dialog opens and you can see all the relevant fields that can be modified. As we scroll down the dialog, we see other fields that we can edit such as connections, upgrade mode, and instance mapping.
+2. An Edit instance dialog opens, and you can see all the relevant fields that can be modified. As we scroll down the dialog, we see other fields that we can edit such as connections, upgrade mode, and instance mapping.
    
    ![Manage Configuration App](images/2.png)
 
@@ -32,7 +32,7 @@ Please do not stop your instance if you are using the SAP BTP Shared Subaccount 
     ![CLick Stop](images/5.png)
     ![Pop-up](images/6.png)
 
-3. You'll see the instance's status changing to 'Stopping' and you can see more details by clicking on that word (it's a hyperlink). Stopping the instance will take a few minutes. Use Refresh or Auto Refresh (covered in exersise 2) to update the screen during this process.
+3. You'll see the instance's status changing to 'Stopping' and you can see more details by clicking on that word (it's a hyperlink). Stopping the instance will take a few minutes. Use Refresh or Auto Refresh (covered in exercise 2) to update the screen during this process.
     ![](images/7.png)
 
 4. After the instance stops, let's start it again. Click the "..." button under the Actions column. Click on **Start**.
@@ -67,7 +67,7 @@ Now let us talk about the other Actions available for each of the instances.
     ![DBX](images/15.png)
     ![DBX](images/16.png)
 
-5. Return to SAP HANA Cloud Central. Click the "..." button under the Actions column for the DEMO_HANA_DB instance again. Now click on **Open SQL Console** menu item. It opens the SQL Console in the same tab. More exersises related to SQL Console are available in exercise 7. 
+5. Return to SAP HANA Cloud Central. Click the "..." button under the Actions column for the DEMO_HANA_DB instance again. Now click on **Open SQL Console** menu item. It opens the SQL Console in the same tab. More exercises related to SQL Console are available in exercise 7. 
    ![SQL Console](images/18.png)
     ![SQL Console](images/17.png)
 

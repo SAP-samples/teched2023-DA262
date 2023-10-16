@@ -6,7 +6,7 @@ The SAP HANA Cloud Central tool is used to monitor all your SAP HANA Cloud insta
 
 This exercise will teach you the basics of navigating the Database Overview Page and how to find the instance health information you need as a database administrator.
 
-1. If SAP HANA Cloud Central is already opened, skip to the next step. Otherwise, open **SAP BTP Cockpit** -> Click **Instance and Subscriptions** under **Services** on the left nav bar -> CLick **Go to Application** button from SAP HANA Cloud Application
+1. If SAP HANA Cloud Central is already opened, skip to the next step. Otherwise, open **SAP BTP Cockpit** -> Click **Instance and Subscriptions** under **Services** on the left nav bar -> Click **Go to Application** button from SAP HANA Cloud Application
     <kbd>
     ![](./images/1.png)
     </kbd>

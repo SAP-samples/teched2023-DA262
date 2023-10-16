@@ -1,28 +1,28 @@
 # Exercise 3: Create Instances
 
 > **Warning**
-Before we start the exercise, please read the following important instruction.
+Before we start the exercise, please read the following important instructions.
 
 
 As a prerequisite, we have already created an SAP HANA Cloud, SAP HANA Database instance: "DEMO_HANA_DB". Your trial account allows creation of only one database instance. 
 * If you've already created "DEMO_HANA_DB", you may not be able to create another database instance in this exercise; however, please continue to follow the steps to learn the process. 
-* If you are a non-trial user, you'll be able to create another instance, but be sure to provide a different instance name as SAP HANA Cloud does not allow creation of instances with same names. 
-* If you are using the SAP BTP Shared Subaccount for this exercise, please follow the steps to learn the process, but **cancel** the creating at the end of step 5. 
+* If you are a non-trial user, you'll be able to create another instance, but be sure to provide a different instance name as SAP HANA Cloud does not allow creation of instances with the same names. 
+* If you are using the SAP BTP Shared Subaccount for this exercise, please follow the steps to learn the process, but **cancel** the wizard at the end of step 5. 
 
 > Creating a new SAP HANA Cloud instance takes approx. 10 mins.
 
 
 Let's see how to create SAP HANA Cloud, SAP HANA Database and SAP HANA Cloud, Data Lake instances directly from the SAP HANA Cloud Central Overview page.
 
-1. Click the **Create Instance** button in the top right. This will navigate you to the create instance wizard.
+1. Click the **Create Instance** button in the top right. This will navigate to the create instance wizard.
    
    ![create](images/1.png)
 
-   * In this page, you can see options to create 
+   * In this page, you can see options to create:
      *  SAP HANA Cloud, SAP HANA Database
      *  SAP HANA Cloud, Data Lake instances 
         *  You may not see this option if you are using the shared subaccount for DA262
-     *  (Cloned) SAP HANA CLound, SAP HANA Database
+     *  (Cloned) SAP HANA Cloud, SAP HANA Database
      
     You can choose the type of instance you would like to create and click on **Next Step**. Let's create an SAP HANA Cloud, SAP HANA Database instance. Select that option and click on Next Step.
     ![select](images/2.png)
