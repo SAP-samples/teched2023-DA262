@@ -186,6 +186,6 @@ An additional data viewer supported by the SQL Console in the SAP HANA database 
     
     Further details on how the SAP HANA database explorer can be used with multi-model features including graph, JSON, and spatial can be found at [Try Out Multi-Model Functionality with the SAP HANA Database Explorer](https://developers.sap.com/tutorials/hana-dbx-multi-model.html).
 
-This concludes the exercise on the using SQL console.  Optionally, view additional content in [Appendix 1 - SAP HANA Database Explorer Extension](../ex4/README.md).
+This concludes the exercise on the using SQL console.  
 
-Optionally continue to - [SAP HANA Cockpit - Exercise 1 - The Database Overview Page](../../hana_cockpit/ex1/README.md)
+Back to - [DA262 - SAP HANA Cloud from an administrator's perspective](../../../README.md)
