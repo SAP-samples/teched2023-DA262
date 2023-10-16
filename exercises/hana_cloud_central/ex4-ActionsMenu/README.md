@@ -60,7 +60,7 @@ Now let us talk about the other Actions available for each of the instances.
    
     ![HANA Cockpit](images/13.png)
 
-3. You are now on the SAP HANA cockpit's Database Overview page. Here, you can perform various monitoring and administrating operations on our SAP HANA Cloud instance. You will learn more about the SAP HANA cockpit in future exercises.
+3. You are now on the SAP HANA cockpit's Database Overview page. Here, you can perform various monitoring and administrating operations on our SAP HANA Cloud instance. You will learn more about the SAP HANA cockpit in the [appendix](../../hana_cockpit/appendix9-HDI/README.md).
    ![HANA Cockpit](images/14.png)
 
 4. We can also open the SAP HANA Database Explorer to create SQL scripts and run them. Switch to the tab with SAP HANA Cloud Central and click on **Open in SAP HANA Database Explorer** menu item in the Actions column for the SAP HANA database. SAP HANA Database Explorer opens in an adjacent new tab.
