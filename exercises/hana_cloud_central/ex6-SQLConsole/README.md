@@ -31,6 +31,8 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
 
     ![sample query](images/sample-query.png)
 
+    The test alert created above will be examined in the next tutorial. 
+
 ## Exercise 6.2 Themes
 A theme can be selected for SAP HANA Cloud Central which includes the SQL Console.  
 
