@@ -28,4 +28,4 @@ This completes the appendices on the SAP HANA Cloud Central.
 
 Back to - [DA262 - SAP HANA Cloud from an administrator's perspective](../../../README.md)
 
-Optionally continue to [SAP HANA Database Explorer - Exercise 1 - Instances in the SAP HANA Database Explorer](../../sap_btp/ex1/README.md)
+Optionally continue to [SAP HANA Cockpit - Appendix 9 - HDI Administration](../../hana_cockpit/appendix9-HDI/README.md)

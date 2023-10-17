@@ -26,6 +26,7 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
 
     ```SQL
     SELECT * FROM M_DATABASE;
+    CALL _SYS_STATISTICS.Trigger_Test_Alert(?, 4, 'High test alert');  
     ```
 
     ![sample query](images/sample-query.png)

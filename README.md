@@ -51,6 +51,19 @@ The SAP HANA database explorer is a web-based tool for browsing and working with
 - [Exercise 2 - Catalog Browser and Object Search](exercises/database_explorer/ex2/)
 - [Exercise 3 - Using the SQL Console](exercises/database_explorer/ex3/)
 
+## Appendix
+Additional HANA Cloud Central Exercises:
+- [Appendix 1 - Searching and Filtering](exercises/hana_cloud_central/appendix1-Filtering/)
+- [Appendix 2 - Toolbar](exercises/hana_cloud_central/appendix2-Toolbar/)
+- [Appendix 3 - Views](exercises/hana_cloud_central/appendix3-Views/)
+- [Appendix 4 - Migration](exercises/hana_cloud_central/appendix4-Migration/)
+- [Appendix 5 - Data Replication](exercises/hana_cloud_central/appendix5-DataReplication/)
+- [Appendix 6 - Admission Control](exercises/hana_cloud_central/appendix6-AdmissionControl/)
+- [Appendix 7 - Native Storage Extension](exercises/hana_cloud_central/appendix7-NSE/)
+- [Appendix 8 - Table Partition](exercises/hana_cloud_central/appendix8-TablePartition/)
+- [Appendix 9 - HDI Administration](exercises/hana_cockpit/appendix9-HDI/)
+
+
 ## Contributing
 Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) to understand the contribution guidelines.
 

@@ -77,3 +77,5 @@ You should now be familiar with common SAP HDI Administration activities within 
 
 
 Back to - [DA262 - SAP HANA Cloud from an administrator's perspective](../../../README.md)
+
+Optionally continue to [SAP HANA Database Explorer - Exercise 1 - Instances in the SAP HANA Database Explorer](../../sap_btp/ex1/README.md)
