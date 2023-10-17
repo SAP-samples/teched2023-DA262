@@ -6,7 +6,7 @@ This exercise will demonstrate the functionality in the SQL Console that is incl
 
 1. The SQL Console can be opened in multiple ways as shown below.  Explore the various ways the SQL Console can be opened.
 
-    * It can be opened from the apps sidebar.
+    * It can be opened from the sidebar.
     
         ![open from the side bar](images/open-from-sidebar.png)
 
@@ -43,7 +43,7 @@ A theme can be selected for SAP HANA Cloud Central which includes the SQL Consol
 
     ![Instance selection](images/instance-selection.png)
 
-2. There is a filter for SAP HANA database and data lake Relational Engine instances and a search bar.  Previously specified connections can be reused so the user name and password for the database does not need to be re-entered.
+2. There is a filter for SAP HANA database and data lake Relational Engine instances and a search bar.  Previously specified connections can be reused so the user and password for the database does not need to be re-entered.
 
     ![connected instance dialog](images/connected-instance-dialog.png)
 
@@ -464,7 +464,7 @@ A theme can be selected for SAP HANA Cloud Central which includes the SQL Consol
     >The shortcut keys may vary depending on the browser used.
 
 ## Exercise 6.16 Download or Copy Results
-1. Execute the followng SQL statement.
+1. Execute the following SQL statement.
 
     ```SQL
     SELECT * FROM RESERVATION_VIEW;

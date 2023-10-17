@@ -16,7 +16,7 @@ This exercise will provide instructions on how to access the shared subaccount p
 
     ![SAP HANA Cloud Central](images/open-hcc.png)
 
-    The SAP HANA Cloud tools subscription has already been created.  Additional instructions are  provided in [Register for a Trial SAP BTP Account](../ex2/README.md) on the steps required to subscribe to this service and how to assign the appropriate role collections to your SAP BTP user but this is not required when using the provided subaccount DA262.
+    The SAP HANA Cloud tools subscription has already been created.  Additional instructions are  provided in [Exercise 2 - Register for a Trial SAP BTP Account](../ex2/README.md) on the steps required to subscribe to this service and how to assign the appropriate role collections to your SAP BTP user but this is not required when using the provided subaccount DA262.
 
 ## Summary
 

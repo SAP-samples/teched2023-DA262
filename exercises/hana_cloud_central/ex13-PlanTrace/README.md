@@ -10,7 +10,7 @@ Plan trace enables users to collect SQL queries and their execution plans, execu
     ![](./images/2.png)
     </kbd>
    
-3. There are many information that are available for each statement so that users can sort or filter or view the column (criterion) of their interest to find the most expensive statement. For example, user can see thet *Statement String*, *Execution Time*, *Execution Start Time*, *Execution End Time*, *User*, etc. You can filter or sort the plans by clicking the icons on the top right of **Traced Plans**. You can also select the columns that you are interested by clicking the gear button and then select the information you want. You can always reset it to the default version as well.
+3. There is information available for each statement so that users can sort or filter or view the column (criterion) of their interest to find the most expensive statement. For example, user can see the *Statement String*, *Execution Time*, *Execution Start Time*, *Execution End Time*, *User*, etc. You can filter or sort the plans by clicking the icons on the top right of **Traced Plans**. You can also select the columns that you are interested by clicking the gear button and then select the information you want. You can always reset it to the default version as well.
    <kbd>
     ![](./images/3.png)
     </kbd>

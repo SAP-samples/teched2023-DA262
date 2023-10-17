@@ -20,7 +20,7 @@ We manage workload in SAP HANA by creating workload classes and workload class m
   
     * Total Statement Memory Limit: 1 GB
 
-    We're defining a workload class named "SampleWorkload" as a parent workload, meaning that it can have child workloads that inherit its limits (i.e. SAP HANA supports hierarichal workload classes). The statement memory limit for this workload class is 1 GB. Click the **Create** button.
+    We're defining a workload class named "SampleWorkload" as a parent workload, meaning that it can have child workloads that inherit its limits (i.e. SAP HANA supports hierarchal workload classes). The statement memory limit for this workload class is 1 GB. Click the **Create** button.
      <kbd>
     ![](./images/3.png)
     </kbd>

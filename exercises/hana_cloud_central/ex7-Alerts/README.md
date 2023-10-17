@@ -10,7 +10,7 @@ In this exercise, you'll examine the Alerts card, with a focus on obtaining more
     ![](./images/1.png)
     </kbd>
 
-2. The Alert Definition screen allows you to choose from many existing alerts, search for them and manage how the different SAP HANA alerts are triggered. You can also filter the alerts. Click **Type**, and select **All** alerts. You will see the testing alerts that you generated in SQL Console exercise.
+2. The Alert Definition screen allows you to choose from many existing alerts, search for them and manage how the different SAP HANA alerts are triggered. You can also filter the alerts. Click **Type** and then select **All** alerts. You will see the testing alerts that you generated in SQL Console exercise.
     <kbd>
     ![](./images/2.png)
     </kbd>
@@ -19,6 +19,8 @@ In this exercise, you'll examine the Alerts card, with a focus on obtaining more
     <kbd>
     ![](./images/3.png)
     </kbd>
+
+    Additional details on alerts and how notification can be sent when an alert occurs can be found at [Alerts in SAP HANA Database and Data Lake](https://developers.sap.com/tutorials/hana-cloud-alerts.html). 
 
 4. Close the detail and click the *database* icon on the left panel to return to the Database Overview page.
 

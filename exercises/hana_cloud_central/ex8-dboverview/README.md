@@ -5,7 +5,7 @@ Through the Database Overview page, you can view key health indicators for this 
 
 This exercise will teach you the basics of navigating the Database Overview page and how to find the information you need as a database administrator.
 
-1. On the bottom panel of the SAP HANA Cloud Central, you'll find a list of instances. Click the right arrow on the bery right end of instance DEMO_HANA_DB (or DA262) to access the database overview page.
+1. On the bottom panel of the SAP HANA Cloud Central, you'll find a list of instances. Click the right arrow on the very right end of instance DEMO_HANA_DB (or DA262) to access the database overview page.
     <kbd>
     ![](./images/2.png)
     </kbd>
@@ -14,7 +14,7 @@ This exercise will teach you the basics of navigating the Database Overview page
     ![](./images/3.png)
     </kbd>
 
-2. Alternativly, you can use the command palette. Click the search button on the toolbar -> type "overview" -> Select "Show Overview" for DEMO_HANA_DB (or DA262). It will take you to the same page as we get in step 1.
+2. Alternatively, you can use the command palette. Click the search button on the toolbar -> type "overview" -> Select "Show Overview" for DEMO_HANA_DB (or DA262). It will take you to the same page as we get in step 1.
    <kbd>
     ![](./images/5.png)
     </kbd>
@@ -25,7 +25,7 @@ This exercise will teach you the basics of navigating the Database Overview page
 
     By default, when you first access the Database Overview page you see a quick synopsis of the database status, as well as the utilization of Memory, CPU, Storage and Network.
     
-    As you scroll down, you see high-level performance metrics in the form of the number of threads, sessions and long-running statements. You also see general information about your SAP HANA Cloud database.
+    As you scroll down, you see high-level performance metrics in the form of the number of threads, sessions, and long-running statements. You also see general information about your SAP HANA Cloud database.
     
     Down further, you see security settings, such as User & Authorization Management. There are also a number of hyperlinks to launch additional administration applications.
 

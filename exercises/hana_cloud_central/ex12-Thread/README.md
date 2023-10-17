@@ -13,7 +13,7 @@ Managing and monitoring past and current information about the performance of th
     ![](./images/2.png)
     </kbd>
 
-3.  Click the **bar-chart** icon. In addition to the thred details, you can see the distribution of threads by thread status, and by thread type. You can also see the summary of top 10 applications, application users, and database users. 
+3.  Click the **bar-chart** icon. In addition to the thread details, you can see the distribution of threads by thread status, and by thread type. You can also see the summary of top 10 applications, application users, and database users. 
     <kbd>
     ![](./images/3.png)
     </kbd>
