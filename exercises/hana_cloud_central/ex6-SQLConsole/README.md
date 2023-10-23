@@ -324,10 +324,6 @@ A theme can be selected for SAP HANA Cloud Central which includes the SQL Consol
 
     Notice that the schema also changes when the connected user is changed.
 
-    Another technique to see the current user is to view the instance details dialog.
-    
-    TODO feature coming soon.  ![](images/todo.png)
-
 ## Exercise 6.9 Change Schema
 1. An example of changing the schema is shown below.  
 
