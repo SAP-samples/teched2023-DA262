@@ -5,9 +5,13 @@ Before we start the exercise, please read the following important instructions.
 
 
 As a prerequisite, we have already created an SAP HANA Cloud, SAP HANA Database instance: "DEMO_HANA_DB". Your trial account allows creation of only one database instance. 
-* If you've already created "DEMO_HANA_DB", you may not be able to create another database instance in this exercise; however, please continue to follow the steps to learn the process. 
+* If you are using the SAP BTP Shared Subaccount for this exercise, the instance **DA262** has been created for you. Please follow the steps to learn the process, but **cancel the wizard at the end of step 5**. 
+
+* If you are using a trial account, and you've already created "DEMO_HANA_DB", you may not be able to create another database instance in this exercise; however, please continue to follow the steps to learn the process.
+
+* If you are using a trail account, and you do not have any instance created, please follow the steps and create a new instance for future exercises.
+
 * If you are a non-trial user, you'll be able to create another instance, but be sure to provide a different instance name as SAP HANA Cloud does not allow creation of instances with the same names. 
-* If you are using the SAP BTP Shared Subaccount for this exercise, please follow the steps to learn the process, but **cancel** the wizard at the end of step 5. 
 
 > Creating a new SAP HANA Cloud instance takes approx. 10 mins.
 
