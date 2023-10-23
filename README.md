@@ -25,7 +25,7 @@ Choose a method to access the SAP BTP by following Exercise 1 or Exercise 2 belo
 
 - [Exercise 3 - Overview of the SAP Business Technology Platform](exercises/sap_btp/ex3/)
 
-## SAP HANA Cloud Central - 60 minutes
+## SAP HANA Cloud Central - 90 minutes
 
 SAP HANA Cloud Central provides database administrators (DBAs) with a unified tool to administer and monitor SAP HANA Cloud database and SAP HANA Cloud data lake instances.
 
